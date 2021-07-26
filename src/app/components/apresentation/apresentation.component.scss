@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.age-gender-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}

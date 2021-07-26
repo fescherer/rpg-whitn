@@ -1,0 +1,17 @@
+<div class="container">
+  <span class="title">Digite seu modificador de {{ title }} 💪</span>
+  <form [formGroup]="formGroup" (ngSubmit)="submitData(formGroup)">
+    <mat-dialog-content>
+      <span style="padding: 10px;">+</span>
+      <mat-form-field apperance="fill">
+        <mat-label>{{ label }}</mat-label>
+        <input matInput formControlName="data">
+        <mat-error >Digite somente números, lembrando que limitamos a 3 casas</mat-error>
+      </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-raised-button color="warn" mat-dialog-close type="button">Cancelar</button>
+      <button mat-raised-button color="primary" type="submit">Enviar</button>
+    </mat-dialog-actions>
+  </form>
+</div>

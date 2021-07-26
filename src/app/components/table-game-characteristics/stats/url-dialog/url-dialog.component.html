@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="submitUrl(form)">
+<div style="display: flex;flex-direction: column;">
+  <h1 mat-dialog-title>Digite a URL da sua imagem</h1>
+  <mat-dialog-content>
+    <mat-form-field apperance="fill">
+      <mat-label>URL</mat-label>
+      <input matInput formControlName="url">
+    </mat-form-field>
+  </mat-dialog-content>
+</div>
+<mat-dialog-actions align="end">
+  <button mat-raised-button color="warn" mat-dialog-close type="button">Cancelar</button>
+  <button mat-raised-button color="primary" type="submit">Enviar</button>
+</mat-dialog-actions>
+</form>

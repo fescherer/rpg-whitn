@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  font-size: 40px;
+  justify-content: space-between;
+  background-color: var(--dark-primary-color);
+  color: var(--light-primary-color);
+  line-height: 50px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  padding: 15px;
+
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px;
+}

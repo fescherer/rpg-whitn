@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="title">
+    <h2>Bem Vindo ao WHITN</h2>
+    <p> Para usar a ficha, digite um código de uma sala e aperte "entrar".</p><p>Você será redirecionado a uma ficha.</p>
+  </div>
+  <form class="form" (submit)="submit()" [formGroup]="submitForm">
+    <mat-form-field color="accent" [style.width.%]='30' #code>
+      <mat-label>Digite o código da sala</mat-label>
+      <input matInput formControlName="code">
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit" style="height: 80%;">Entrar</button>
+  </form>
+</div>

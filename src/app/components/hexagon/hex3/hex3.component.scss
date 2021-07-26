@@ -1,0 +1,71 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 130px;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: var(--dark-primary-color);
+}
+
+.hexagon {
+  position: relative;
+  width: 80px; 
+  height: 46.19px;
+  background-color: var(--dark-primary-color);
+  margin: 23.09px 0;
+  color: var(--text-primary-color);
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  z-index: 0;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 23.09px solid var(--dark-primary-color);
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 23.09px solid var(--dark-primary-color);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calc {
+  margin-top: 2px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.change-modifier-button {
+  background-color: var(--dark-primary-color);
+  cursor: pointer;
+}
+
+.total {
+  font-weight: 700;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}

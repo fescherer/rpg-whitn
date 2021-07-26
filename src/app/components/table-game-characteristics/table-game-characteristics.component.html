@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card-header>
+    <mat-icon mat-card-avatar>shield</mat-icon>
+    <mat-card-title>Mecânicas do jogo</mat-card-title>
+    <mat-card-subtitle>Se prepare para o combate</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div style="display: flex;flex-direction: column;">
+      <app-stats></app-stats>
+      <app-currently-effects></app-currently-effects>
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="primary" (click)="save()">
+      Salvar Dados
+    </button>
+  </mat-card-actions>
+</mat-card>

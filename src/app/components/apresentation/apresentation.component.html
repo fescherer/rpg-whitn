@@ -1,0 +1,36 @@
+<mat-card>
+  <mat-card-header>
+    <mat-icon mat-card-avatar>account_circle</mat-icon>
+    <mat-card-title>Seu personagem</mat-card-title>
+    <mat-card-subtitle>Informações básicas</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="wrapper">
+      <form [formGroup]="apresentationForm" class="wrapper" (submit)="save()">
+        <mat-form-field apperance="fill" #name >
+          <mat-label>Nome</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+        <mat-form-field apperance="fill" #motivation >
+          <mat-label>Motivação</mat-label>
+          <input matInput formControlName="motivation">
+        </mat-form-field>
+        <div class="age-gender-container">
+          <mat-form-field apperance="fill" #age >
+            <mat-label>Idade</mat-label>
+            <input matInput formControlName="age">
+          </mat-form-field>
+          <mat-form-field apperance="fill" #gender >
+            <mat-label>Gênero</mat-label>
+            <input matInput formControlName="gender">
+          </mat-form-field>
+        </div>
+      </form>
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="primary" (click)="save()">
+      Salvar Dados
+    </button>
+  </mat-card-actions>
+</mat-card>
