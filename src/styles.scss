@@ -78,7 +78,7 @@ button {
   transition: 0.2s;
 
   &:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.5);
   }
 }
 
@@ -86,7 +86,7 @@ button {
   transition: 0.3s;
 
   &:hover {
-    transform: translate(0, -5px);
+    transform: translate(0, -3px);
   }
 }
 

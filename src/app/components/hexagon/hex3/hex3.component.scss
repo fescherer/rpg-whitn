@@ -12,6 +12,7 @@
 }
 
 .hexagon {
+  user-select: none;
   position: relative;
   width: 80px; 
   height: 46.19px;
@@ -68,4 +69,5 @@
   align-items: center;
   justify-content: center;
   font-size: 25px;
+  user-select: none;
 }

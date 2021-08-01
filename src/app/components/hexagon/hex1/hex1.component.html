@@ -1,0 +1,14 @@
+<div class="container">
+  <span class="title">{{ title }}</span>
+  <div class="content-wrapper">
+    <div class="hexagon"><span>
+      <div class="content hover-effect" (click)="openDialog()">
+        <span>{{ value }}</span>
+      </div>
+    </span></div>
+    <div class="button-container">
+      <div class="button hover-effect" (click)="addValue()"><mat-icon color="primary">add</mat-icon></div>
+      <div class="button hover-effect" (click)="decreaseValue()"><mat-icon color="primary">remove</mat-icon></div>
+    </div>
+  </div>
+</div>

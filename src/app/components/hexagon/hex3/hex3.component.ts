@@ -29,7 +29,7 @@ export class Hex3Component implements OnInit {
     this.calcResult();
   }
   
-  openDialog() {
+  openDialog(): void {
     this.hexDialogRef = this.dialog.open(HexDialogComponent, {data: {title: this.title, label: 'modificador'}});
     this.hexDialogRef.afterClosed()
       .pipe(filter(modifier => modifier))
@@ -39,7 +39,7 @@ export class Hex3Component implements OnInit {
       });
   }
 
-  calcResult() {
+  calcResult(): void {
     this.data.result = this.data.defaultValue + this.data.modifier;
   }
 

@@ -20,6 +20,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { EffectsComponent } from './components/table-game-characteristics/stats/effects/effects.component';
+import { Hex1Component } from './components/hexagon/hex1/hex1.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { EffectsComponent } from './components/table-game-characteristics/stats/
     HomeComponent,
     Hex3Component,
     HexDialogComponent,
-    EffectsComponent
+    EffectsComponent,
+    Hex1Component
   ],
   imports: [
     BrowserModule,

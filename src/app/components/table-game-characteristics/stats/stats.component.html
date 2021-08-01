@@ -11,7 +11,8 @@
       <app-effects *ngFor="let stat of stats" [color]="stat.color" [title]="stat.title"></app-effects>
     </div>
     <div class="stats">
-  
+      <app-hex1 [title]="'Vida atual'" [value]="0"></app-hex1>
+      <app-hex1 [title]="'Estabilidade atual'" [value]="0"></app-hex1>
     </div>
   </div>
 </div>

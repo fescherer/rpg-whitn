@@ -35,7 +35,6 @@
 .effects-container {
   display: flex;
   flex-direction: column;
-  background-color: aqua;
 }
 
 .effects {
@@ -43,12 +42,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
   height: 60%;
-  background-color: beige;
 }
 
 .stats {
-  background-color: coral;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
 }
-
