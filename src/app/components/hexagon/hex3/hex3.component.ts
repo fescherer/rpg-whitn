@@ -30,7 +30,7 @@ export class Hex3Component implements OnInit {
   }
   
   openDialog() {
-    this.hexDialogRef = this.dialog.open(HexDialogComponent, {data: {title: 'vida', label: 'modificador'}});
+    this.hexDialogRef = this.dialog.open(HexDialogComponent, {data: {title: this.title, label: 'modificador'}});
     this.hexDialogRef.afterClosed()
       .pipe(filter(modifier => modifier))
       .subscribe(modifier => {

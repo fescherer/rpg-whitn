@@ -16,6 +16,10 @@ import { CaracterSheetComponent } from './pages/caracter-sheet/caracter-sheet.co
 import { HomeComponent } from './pages/home/home.component';
 import { Hex3Component } from './components/hexagon/hex3/hex3.component';
 import { HexDialogComponent } from './components/hexagon/hex-dialog/hex-dialog.component';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { EffectsComponent } from './components/table-game-characteristics/stats/effects/effects.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +33,17 @@ import { HexDialogComponent } from './components/hexagon/hex-dialog/hex-dialog.c
     CaracterSheetComponent,
     HomeComponent,
     Hex3Component,
-    HexDialogComponent
+    HexDialogComponent,
+    EffectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.config)
   ],
   providers: [],
   bootstrap: [AppComponent]

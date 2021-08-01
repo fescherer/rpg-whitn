@@ -1,0 +1,159 @@
+.container {
+  opacity: 50%;
+  cursor: pointer;
+  display: flex;
+  width: 5em;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  line-height: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  border-radius: 20px;
+  text-transform: capitalize;
+  user-select: none;
+  span {
+    text-shadow:
+      -1px 1px 0 #fff,
+      1px 1px 0 #fff,
+      1px -1px 0 #fff,
+      -1px -1px 0 #fff;
+  }
+}
+
+@media only screen and (min-width: 1530px) {
+  .container {
+    opacity: 50%;
+    cursor: pointer;
+    display: flex;
+    width: 7em;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    line-height: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    border-radius: 20px;
+    text-transform: capitalize;
+    user-select: none;
+    span {
+      text-shadow:
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px -1px 0 #fff;
+    }
+  }
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.yellowActivated {
+  color: white;
+  filter: brightness(0.8);
+  opacity: 100%;
+  box-shadow:0 0 20px #ffff00;
+  span {
+    text-shadow:
+      -1px 1px 0 #000,
+      1px 1px 0 #000,
+      1px -1px 0 #000,
+      -1px -1px 0 #000;
+  }
+}
+
+.orange {
+  background-color: #f57c00;
+}
+
+.orangeActivated {
+  color: white;
+  filter: brightness(0.8);
+  opacity: 100%;
+  box-shadow:0 0 20px #f57c00;
+  span {
+    text-shadow:
+      -1px 1px 0 #000,
+      1px 1px 0 #000,
+      1px -1px 0 #000,
+      -1px -1px 0 #000;
+  }
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.redActivated {
+  color: white;
+  filter: brightness(0.8);
+  opacity: 100%;
+  box-shadow:0 0 20px #ff0000;
+  span {
+    text-shadow:
+      -1px 1px 0 #000,
+      1px 1px 0 #000,
+      1px -1px 0 #000,
+      -1px -1px 0 #000;
+  }
+}
+
+.green {
+  background-color: #76ff03;
+}
+
+.greenActivated {
+  color: white;
+  filter: brightness(0.8);
+  opacity: 100%;
+  box-shadow:0 0 20px #76ff03;
+  span {
+    text-shadow:
+      -1px 1px 0 #000,
+      1px 1px 0 #000,
+      1px -1px 0 #000,
+      -1px -1px 0 #000;
+  }
+}
+
+.blue {
+  background-color: #4fc3f7;
+}
+
+.blueActivated {
+  color: white;
+  filter: brightness(0.8);
+  opacity: 100%;
+  box-shadow:0 0 20px #4fc3f7;
+  span {
+    text-shadow:
+      -1px 1px 0 #000,
+      1px 1px 0 #000,
+      1px -1px 0 #000,
+      -1px -1px 0 #000;
+  }
+}
+
+.purple {
+  background-color: #673ab7;
+}
+
+.purpleActivated {
+  color: white;
+  filter: brightness(0.8);
+  opacity: 100%;
+  box-shadow:0 0 20px #673ab7;
+  span {
+    text-shadow:
+      -1px 1px 0 #000,
+      1px 1px 0 #000,
+      1px -1px 0 #000,
+      -1px -1px 0 #000;
+  }
+}
