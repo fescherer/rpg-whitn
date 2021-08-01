@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
+import { FirestoreServiceService } from 'src/app/services/firestore-service.service';
 
 @Component({
   selector: 'app-caracter-sheet',

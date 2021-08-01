@@ -32,12 +32,23 @@
   }
 }
 
-.stats{
+.effects-container {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+.effects {
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem;
-  width: 50%;
-  align-self: center;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+
+  height: 60%;
+  background-color: beige;
 }
+
+.stats {
+  background-color: coral;
+}
+

@@ -6,10 +6,12 @@
     </div>
     <img [src]="imgSource" alt="Avatar Image" class="img" *ngIf='imgSource!=""'>
   </div>
-  <div class="stats">
-    <app-hex3 [defaultValue]=21 [title]="'Vida'"></app-hex3>
-    <app-hex3 [defaultValue]=4 [title]="'Estabilidade'"></app-hex3>
-    <app-hex3 [defaultValue]=55 [title]="'Armadura'"></app-hex3>
-    <app-hex3 [defaultValue]=105 [title]="'Dano'"></app-hex3>
+  <div class="effects-container">
+    <div class="effects">
+      <app-effects *ngFor="let stat of stats" [color]="stat.color" [title]="stat.title"></app-effects>
+    </div>
+    <div class="stats">
+  
+    </div>
   </div>
 </div>

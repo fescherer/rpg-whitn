@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, NgForm, Validators} from '@angular/forms';
+import { FirestoreServiceService } from 'src/app/services/firestore-service.service';
 
 @Component({
   selector: 'app-apresentation',
@@ -11,7 +12,8 @@ export class ApresentationComponent implements OnInit {
   apresentationForm : FormGroup;
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private pageService: FirestoreServiceService
   ) { }
 
   ngOnInit(): void {
@@ -24,7 +26,9 @@ export class ApresentationComponent implements OnInit {
   }
 
   save() {
-    if(this.apresentationForm.valid)
-      console.log(this.apresentationForm.value);
+    if(this.apresentationForm.valid){
+      this.pageService.createCharacterSheet(this.apresentationForm.value)
+    }
+      
   }
 }
