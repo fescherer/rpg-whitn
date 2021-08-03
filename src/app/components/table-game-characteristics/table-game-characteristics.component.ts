@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { characterSheetDataInterface } from 'src/app/interfaces/characterSheetDataInterface';
+import { hex3Interface } from 'src/app/interfaces/hexInterface';
 
 @Component({
   selector: 'app-table-game-characteristics',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table-game-characteristics.component.scss']
 })
 export class TableGameCharacteristicsComponent implements OnInit {
+  @Input() data: characterSheetDataInterface;
 
   constructor() { }
 

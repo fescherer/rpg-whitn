@@ -1,4 +1,17 @@
-<app-hex3 [defaultValue]=21 [title]="'Vida'"></app-hex3>
-<app-hex3 [defaultValue]=4 [title]="'Estabilidade'"></app-hex3>
-<app-hex3 [defaultValue]=55 [title]="'Armadura'"></app-hex3>
-<app-hex3 [defaultValue]=105 [title]="'Dano'"></app-hex3>
+<div class="container">
+  <div class="character-photo hover-effect-translate" (click)="searchImage()">
+    <div class="img no-img-container" *ngIf='imgSource==""'>
+      <mat-icon style="transform: scale(2)">portrait</mat-icon>
+      <span>Clique e mude seu avatar</span>
+    </div>
+    <img [src]="imgSource" alt="Avatar Image" class="img" *ngIf='imgSource!=""'>
+  </div>
+  <div class="effects-container">
+    <div class="effects">
+      <app-effects *ngFor="let stat of data.gameplayCharacteristics.currentlyEffects.effects" [color]="stat.color" [title]="stat.title"></app-effects>
+    </div>
+    <div class="stats">
+      <app-hex1 *ngFor="let i of data.gameplayCharacteristics.currentlyEffects.stats" [title]="i.title" [value]="i.value"></app-hex1>
+    </div>
+  </div>
+</div>

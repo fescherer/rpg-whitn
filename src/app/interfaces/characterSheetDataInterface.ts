@@ -1,4 +1,5 @@
-import { hexInterface } from "./hexInterface";
+import { hex1Interface, hex3Interface } from "./hexInterface";
+import { effectInterface } from "./effect";
 
 export interface characterSheetDataInterface {
   apresentation: {
@@ -8,13 +9,11 @@ export interface characterSheetDataInterface {
     gender: string,
   },
   gameplayCharacteristics: {
-    stats: {
-      photo: string,
-      stats: Array<hexInterface>,
-    },
     currentlyEffects: {
-      currentlyStats: Array<number>
-      onFire: boolean
-    }
+      photo: string,
+      effects: Array<effectInterface>,
+      stats: Array<hex1Interface>;
+    },
+    stats: Array<hex3Interface>;
   },
 }

@@ -1,20 +1,20 @@
 <div class="hover-effect-translate">
   <div class="wrapper">
     <span class="title">{{ data.title }}</span>
-  <div class="hexagon">
+  <div class="hexagon"><span>
     <div class="container">
       <div class="calc">
         <span matTooltip="Valor padrão: Vindo do cálculo dos atributos">{{ data.defaultValue }}</span>
         <div 
           matTooltip="Valor modificador: Você adiciona baseado no bônus de habilidade" 
-          class="change-modifier-button hover-effect" 
+          class="change-modifier-button" 
           (click)="openDialog()"
-        >+ {{ data.modifier }}</div>
+        ><span class="hover-effect">+ {{ data.modifier }}</span></div>
       </div>
       <div class="total">
         <span matTooltip="Valor total: Soma dos valores padrão com o de modificador">{{ data.result }}</span>
       </div>
     </div>
-  </div>
+  </span></div>
   </div>
 </div>
