@@ -9,9 +9,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { ApresentationComponent } from './components/apresentation/apresentation.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TableGameCharacteristicsComponent } from './components/table-game-characteristics/table-game-characteristics.component';
-import { CurrentlyEffectsComponent } from './components/table-game-characteristics/currently-effects/currently-effects.component';
-import { StatsComponent } from './components/table-game-characteristics/stats/stats.component';
-import { UrlDialogComponent } from './components/table-game-characteristics/stats/url-dialog/url-dialog.component';
 import { CaracterSheetComponent } from './pages/caracter-sheet/caracter-sheet.component';
 import { HomeComponent } from './pages/home/home.component';
 import { Hex3Component } from './components/hexagon/hex3/hex3.component';
@@ -19,7 +16,10 @@ import { HexDialogComponent } from './components/hexagon/hex-dialog/hex-dialog.c
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
-import { EffectsComponent } from './components/table-game-characteristics/stats/effects/effects.component';
+import { Hex1Component } from './components/hexagon/hex1/hex1.component';
+import { UrlDialogComponent } from './components/table-game-characteristics/currently-effects/url-dialog/url-dialog.component';
+import { EffectsComponent } from './components/table-game-characteristics/currently-effects/effects/effects.component';
+import { CurrentlyEffectsComponent } from './components/table-game-characteristics/currently-effects/currently-effects.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +27,14 @@ import { EffectsComponent } from './components/table-game-characteristics/stats/
     HeaderComponent,
     ApresentationComponent,
     TableGameCharacteristicsComponent,
-    CurrentlyEffectsComponent,
-    StatsComponent,
     UrlDialogComponent,
     CaracterSheetComponent,
     HomeComponent,
     Hex3Component,
     HexDialogComponent,
-    EffectsComponent
+    EffectsComponent,
+    Hex1Component,
+    CurrentlyEffectsComponent,
   ],
   imports: [
     BrowserModule,

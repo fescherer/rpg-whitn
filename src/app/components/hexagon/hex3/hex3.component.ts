@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { HexDialogComponent } from '../hex-dialog/hex-dialog.component';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { filter } from 'rxjs/operators';
-import { hexInterface } from 'src/app/interfaces/hexInterface';
+import { hex3Interface } from 'src/app/interfaces/hexInterface';
 
 @Component({
   selector: 'app-hex3',
@@ -13,7 +13,7 @@ export class Hex3Component implements OnInit {
   @Input() defaultValue: number;
   @Input() title: string;
 
-  data: hexInterface = {
+  data: hex3Interface = {
     title: '',
     defaultValue: 0,
     modifier: 0,
@@ -29,7 +29,7 @@ export class Hex3Component implements OnInit {
     this.calcResult();
   }
   
-  openDialog() {
+  openDialog(): void {
     this.hexDialogRef = this.dialog.open(HexDialogComponent, {data: {title: this.title, label: 'modificador'}});
     this.hexDialogRef.afterClosed()
       .pipe(filter(modifier => modifier))
@@ -39,7 +39,7 @@ export class Hex3Component implements OnInit {
       });
   }
 
-  calcResult() {
+  calcResult(): void {
     this.data.result = this.data.defaultValue + this.data.modifier;
   }
 

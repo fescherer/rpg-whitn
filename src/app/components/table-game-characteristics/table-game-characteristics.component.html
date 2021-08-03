@@ -6,8 +6,10 @@
   </mat-card-header>
   <mat-card-content>
     <div style="display: flex;flex-direction: column;">
-      <app-stats></app-stats>
-      <app-currently-effects></app-currently-effects>
+      <app-currently-effects [data]="data"></app-currently-effects>
+      <div class="stat-container">
+        <app-hex3 *ngFor="let i of data.gameplayCharacteristics.stats" [defaultValue]="i.defaultValue" [title]="i.title"></app-hex3>
+      </div>
     </div>
   </mat-card-content>
   <mat-card-actions align="end">
