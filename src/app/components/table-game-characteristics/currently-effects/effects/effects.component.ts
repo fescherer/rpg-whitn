@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { effectInterface } from 'src/app/interfaces/effect';
 
 @Component({
   selector: 'app-effects',
@@ -6,9 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./effects.component.scss']
 })
 export class EffectsComponent implements OnInit {
-  state: boolean = false;
-  @Input() color: string;
-  @Input() title: string;
+  @Input() data: effectInterface;
 
   constructor() { }
 
