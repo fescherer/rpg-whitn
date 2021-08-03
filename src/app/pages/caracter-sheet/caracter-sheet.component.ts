@@ -20,7 +20,7 @@ export class CaracterSheetComponent implements OnInit {
     {state: true, color: 'red', title: 'H. Damaged'},
     {state: true, color: 'yellow', title: 'Weakened'},
     {state: true, color: 'orange', title: 'Não sei'},
-    {state: true, color: 'red', title: 'Broken'},
+    {state: false, color: 'red', title: 'Broken'},
     {state: true, color: 'green', title: 'Weakened'},
     {state: true, color: 'blue', title: 'string'},
     {state: true, color: 'purple', title: 'Broken'},

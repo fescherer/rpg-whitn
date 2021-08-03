@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { characterSheetDataInterface } from '../interfaces/characterSheetDataInterface';
+import { fireStoreDataInterface } from '../interfaces/fireStoraDataInterface';
 
 @Injectable({
   providedIn: 'root'
@@ -9,8 +10,8 @@ export class FirestoreServiceService {
 
   constructor(private angularFire: AngularFirestore) { }
 
-  createCharacterSheet(data: characterSheetDataInterface) {
-    return new Promise<characterSheetDataInterface>((resolve, reject) => {
+  createCharacterSheet(data: fireStoreDataInterface) {
+    return new Promise<fireStoreDataInterface>((resolve, reject) => {
       this.angularFire.collection("page").add(data).then((res) => {}, (err) => {reject(err)})
     })
   }

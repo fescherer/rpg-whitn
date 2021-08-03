@@ -1,3 +1,6 @@
-<div class="container hover-effect-translate hover-effect " (click)="this.state = !this.state;" [ngClass]="[this.state ? this.color+'Activated' : '',this.color]"  >
-  <span>{{ this.title }}</span> 
+<div 
+  class="container hover-effect-translate hover-effect "
+ (click)="this.data.state = !this.data.state;" 
+ [ngClass]="[this.data.state ? this.data.color+'Activated' : '',this.data.color]"  >
+  <span>{{ this.data.title }}</span> 
 </div>

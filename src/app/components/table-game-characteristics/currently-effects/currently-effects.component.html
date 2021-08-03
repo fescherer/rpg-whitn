@@ -8,7 +8,7 @@
   </div>
   <div class="effects-container">
     <div class="effects">
-      <app-effects *ngFor="let stat of data.gameplayCharacteristics.currentlyEffects.effects" [color]="stat.color" [title]="stat.title"></app-effects>
+      <app-effects *ngFor="let effect of data.gameplayCharacteristics.currentlyEffects.effects" [data]="effect"></app-effects>
     </div>
     <div class="stats">
       <app-hex1 *ngFor="let i of data.gameplayCharacteristics.currentlyEffects.stats" [title]="i.title" [value]="i.value"></app-hex1>
