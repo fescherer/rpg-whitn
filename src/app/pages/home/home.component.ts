@@ -27,10 +27,10 @@ export class HomeComponent implements OnInit {
   ];
 
   stats: hex3Interface[] = [
-    {title: "Vida", defaultValue: 0, modifier: 0, result: 0,},
-    {title: "Estabilidade", defaultValue: 0, modifier: 0, result: 0,},
-    {title: "Armadura", defaultValue: 0, modifier: 0, result: 0,},
-    {title: "Dano", defaultValue: 0, modifier: 0, result: 0,},
+    {title: "Vida", leftNumber: 0, rightNumber: 0, result: 0,},
+    {title: "Estabilidade", leftNumber: 0, rightNumber: 0, result: 0,},
+    {title: "Armadura", leftNumber: 0, rightNumber: 0, result: 0,},
+    {title: "Dano", leftNumber: 0, rightNumber: 0, result: 0,},
   ];
 
   defaultData: characterSheetDataInterface = {
@@ -48,6 +48,32 @@ export class HomeComponent implements OnInit {
       },
       stats: this.stats,
     },
+    attributes: [
+      {title: "Força", value: 0, thirdValue: 0},
+      {title: "Destreza", value: 0, thirdValue: 0},
+      {title: "Constituição", value: 0, thirdValue: 0},
+      {title: "Porte", value: 0, thirdValue: 0},
+      {title: "Inteligência", value: 0, thirdValue: 0},
+      {title: "Sabedoria", value: 0, thirdValue: 0},
+      {title: "Carisma", value: 0, thirdValue: 0},
+      {title: "Poder", value: 0, thirdValue: 0},
+    ],  
+    specialAttributes: [
+      {title: "Movimento", leftNumber: 0, rightNumber: 0, result: 0,},
+      {title: "Resistência", leftNumber: 0, rightNumber: 0, result: 0,},
+    ],
+    specificAttributes: [
+      {title: "Atletismo",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
+      {title: "Percepção",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
+      {title: "Intimidação",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
+      {title: "Criaturas ",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
+      {title: "Medicina ",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
+      {title: "Sobrevivência ",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
+      {title: "Furtividade",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
+      {title: "Terapia ",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
+      {title: "Eletromecânica ",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
+      {title: "Sorte ",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,}      
+    ]
   }
 
   dataCreation: fireStoreDataInterface = {

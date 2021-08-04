@@ -8,7 +8,7 @@
     <div style="display: flex;flex-direction: column;">
       <app-currently-effects [data]="data"></app-currently-effects>
       <div class="stat-container">
-        <app-hex3 *ngFor="let i of data.gameplayCharacteristics.stats" [defaultValue]="i.defaultValue" [title]="i.title"></app-hex3>
+        <app-hex3 *ngFor="let i of data.gameplayCharacteristics.stats" [data]="i"></app-hex3>
       </div>
     </div>
   </mat-card-content>

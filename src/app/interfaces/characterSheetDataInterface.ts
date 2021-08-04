@@ -1,4 +1,4 @@
-import { hex1Interface, hex3Interface } from "./hexInterface";
+import { hex1Interface, hex3AttributeInterface, hex3Interface, hex4Interface } from "./hexInterface";
 import { effectInterface } from "./effect";
 
 export interface characterSheetDataInterface {
@@ -16,4 +16,7 @@ export interface characterSheetDataInterface {
     },
     stats: Array<hex3Interface>;
   },
+  attributes: Array<hex3AttributeInterface>,
+  specialAttributes: Array<hex3Interface>,
+  specificAttributes: Array<hex4Interface>
 }

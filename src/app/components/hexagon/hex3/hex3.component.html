@@ -4,12 +4,12 @@
   <div class="hexagon"><span>
     <div class="container">
       <div class="calc">
-        <span matTooltip="Valor padrão: Vindo do cálculo dos atributos">{{ data.defaultValue }}</span>
+        <span matTooltip="Valor padrão: Vindo do cálculo dos atributos">{{ data.leftNumber }}</span>
         <div 
           matTooltip="Valor modificador: Você adiciona baseado no bônus de habilidade" 
           class="change-modifier-button" 
           (click)="openDialog()"
-        ><span class="hover-effect">+ {{ data.modifier }}</span></div>
+        ><span class="hover-effect">+ {{ data.rightNumber }}</span></div>
       </div>
       <div class="total">
         <span matTooltip="Valor total: Soma dos valores padrão com o de modificador">{{ data.result }}</span>

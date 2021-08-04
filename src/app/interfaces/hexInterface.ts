@@ -5,7 +5,21 @@ export interface hex1Interface {
 
 export interface hex3Interface {
   title: string,
-  defaultValue: number,
+  leftNumber: number,
+  rightNumber: number,
+  result: number,
+}
+
+export interface hex3AttributeInterface {
+  title: string,
+  value: number,
+  thirdValue: number,
+}
+
+export interface hex4Interface {
+  title: string,
+  leftNumber: number,
   modifier: number,
+  thirdValue: number,
   result: number,
 }

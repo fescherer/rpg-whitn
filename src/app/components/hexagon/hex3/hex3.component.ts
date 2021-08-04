@@ -10,37 +10,28 @@ import { hex3Interface } from 'src/app/interfaces/hexInterface';
   styleUrls: ['./hex3.component.scss']
 })
 export class Hex3Component implements OnInit {
-  @Input() defaultValue: number;
-  @Input() title: string;
-
-  data: hex3Interface = {
-    title: '',
-    defaultValue: 0,
-    modifier: 0,
-    result: 0,
-  }
+  @Input() data: hex3Interface;
 
   constructor(private dialog: MatDialog) { }
   hexDialogRef: MatDialogRef<HexDialogComponent>;
   
   ngOnInit(): void {
-    this.data.defaultValue = this.defaultValue;
-    this.data.title = this.title;
     this.calcResult();
+
   }
   
   openDialog(): void {
-    this.hexDialogRef = this.dialog.open(HexDialogComponent, {data: {title: this.title, label: 'modificador'}});
+    this.hexDialogRef = this.dialog.open(HexDialogComponent, {data: {title: this.data.title, label: 'modificador'}});
     this.hexDialogRef.afterClosed()
       .pipe(filter(modifier => modifier))
       .subscribe(modifier => {
-        this.data.modifier = parseInt(modifier);
+        this.data.rightNumber = parseInt(modifier);
         this.calcResult();
       });
   }
 
   calcResult(): void {
-    this.data.result = this.data.defaultValue + this.data.modifier;
+    this.data.result = this.data.leftNumber + this.data.rightNumber;
   }
 
 }
