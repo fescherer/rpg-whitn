@@ -1,0 +1,33 @@
+<div class="container">
+  <span class="title">O que você desenvolveu? 😟</span>
+  <form [formGroup]="formGroup" (ngSubmit)="submitData(formGroup)" style="width: 80%;">
+    <mat-dialog-content>
+      <mat-form-field apperance="fill" style="width: 100%">
+        <mat-label>Tipo</mat-label>
+        <mat-select  formControlName="title">
+          <mat-option *ngFor="let type of effectsTypes" [value]="type.title">{{ type.title }}</mat-option>
+        </mat-select>
+        <mat-error>Preencha esse campo antes de enviar</mat-error>
+      </mat-form-field>
+      <mat-form-field apperance="fill" style="width: 100%">
+        <mat-label>Efeito</mat-label>
+        <input matInput formControlName="relatedTo" style="width: 100%;">
+        <mat-error>Preencha esse campo antes de enviar</mat-error>
+      </mat-form-field>
+      <mat-form-field apperance="fill" style="width: 100%">
+        <mat-label>Duração</mat-label>
+        <mat-select  formControlName="duration">
+          <mat-option value="Por 1 dia">Por 1 dia</mat-option>
+          <mat-option value="Por 2 dias">Por 2 dias</mat-option>
+          <mat-option value="Até o fim da sessão">Até o fim da sessão</mat-option>
+          <mat-option value="Pela vida toda">Pela vida toda</mat-option>
+        </mat-select>
+        <mat-error>Preencha esse campo antes de enviar</mat-error>
+      </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-raised-button color="warn" mat-dialog-close type="button">Cancelar</button>
+      <button mat-raised-button color="primary" type="submit">Enviar</button>
+    </mat-dialog-actions>
+  </form>
+</div>

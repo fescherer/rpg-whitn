@@ -25,6 +25,8 @@ import { Hex4Component } from './components/hexagon/hex4/hex4.component';
 import { Hex2Component } from './components/hexagon/hex2/hex2.component';
 import { SecondaryAttributesComponent } from './components/secondary-attributes/secondary-attributes.component';
 import { StabilityComponent } from './components/stability/stability.component';
+import { ListSourcesDialogComponent } from './components/list-sources-dialog/list-sources-dialog.component';
+import { ListEffectsDialogComponent } from './components/list-effects-dialog/list-effects-dialog.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { StabilityComponent } from './components/stability/stability.component';
     Hex2Component,
     SecondaryAttributesComponent,
     StabilityComponent,
+    ListSourcesDialogComponent,
+    ListEffectsDialogComponent,
   ],
   imports: [
     BrowserModule,

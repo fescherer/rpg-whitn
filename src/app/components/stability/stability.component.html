@@ -1,1 +1,47 @@
-<p>stability works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-icon mat-card-avatar>self_improvement</mat-icon>
+    <mat-card-title>Estabilidade</mat-card-title>
+    <mat-card-subtitle>Se prepare para o combate</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="container">
+
+      <div class="stability-sources shadow-effect hover-effect-translate">
+        <div class="title">
+          Fontes de estabilidade
+          <mat-icon class="add-button hover-effect" (click)="addStabilitySource()" color="primary">add_circle</mat-icon>
+        </div>
+        <ul class="list">
+          <li 
+            class="hover-effect"
+            *ngFor="let source of stabilitySources"
+          >
+            {{ source }}<mat-icon color="primary" (click)="removeSource(source)">remove_circle</mat-icon>
+          </li>
+        </ul>
+      </div>
+
+      <div class="development-effects shadow-effect hover-effect-translate">
+        <div class="title">
+          Efeitos desenvolvidos
+          <mat-icon class="add-button hover-effect" (click)="addStabilityEffect()" color="primary">add_circle</mat-icon>
+        </div>
+        <ul class="list">
+          <li 
+            class="hover-effect"
+            *ngFor="let effect of stabilityEffects"
+          >
+            {{ effect }}<mat-icon color="primary" (click)="removeEffect(effect)">remove_circle</mat-icon>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="primary">
+      Salvar Dados
+    </button>
+  </mat-card-actions>
+</mat-card>

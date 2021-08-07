@@ -1,0 +1,16 @@
+<div class="container">
+  <span class="title">Qual sua nova fonte de estabilidade? ✨</span>
+  <form [formGroup]="formGroup" (ngSubmit)="submitData(formGroup)" style="width: 80%;">
+    <mat-dialog-content style="display: flex; justify-content: center; padding: 0.5rem;">
+      <mat-form-field apperance="fill" style="width: 100%;">
+        <mat-label>Fonte de estabilidade</mat-label>
+        <input matInput formControlName="data">
+        <mat-error >Aconteceu um erro</mat-error>
+      </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-raised-button color="warn" mat-dialog-close type="button">Cancelar</button>
+      <button mat-raised-button color="primary" type="submit">Enviar</button>
+    </mat-dialog-actions>
+  </form>
+</div>
