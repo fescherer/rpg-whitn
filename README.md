@@ -1,6 +1,6 @@
 # Whitn
 
-#Deploy::::  ng deploy --base-href=/rpg-whitn/
+#Deploy::::  ng deploy --base-href=/rpg-whitn/ 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 
