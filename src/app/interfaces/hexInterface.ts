@@ -10,10 +10,10 @@ export interface hex3Interface {
   result: number,
 }
 
-export interface hex3AttributeInterface {
+export interface hex2Interface {
   title: string,
-  value: number,
-  thirdValue: number,
+  description: string,
+  value: number
 }
 
 export interface hex4Interface {

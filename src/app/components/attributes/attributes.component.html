@@ -5,8 +5,13 @@
     <mat-card-subtitle>Que sua sorte esteja nos dados</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <div class="container">
-     
+    <div class="wrapper">
+      <div class="container">
+        <app-hex2 class="attributes" *ngFor="let attribute of data.attributes" [data]="attribute"></app-hex2>
+      </div>
+      <div class="container">
+        <app-hex3 *ngFor="let specialAttribute of data.specialAttributes" [data]="specialAttribute"></app-hex3>
+      </div>
     </div>
   </mat-card-content>
   <mat-card-actions align="end">

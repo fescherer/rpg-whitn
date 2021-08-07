@@ -21,6 +21,8 @@ import { UrlDialogComponent } from './components/table-game-characteristics/curr
 import { EffectsComponent } from './components/table-game-characteristics/currently-effects/effects/effects.component';
 import { CurrentlyEffectsComponent } from './components/table-game-characteristics/currently-effects/currently-effects.component';
 import { AttributesComponent } from './components/attributes/attributes.component';
+import { Hex4Component } from './components/hexagon/hex4/hex4.component';
+import { Hex2Component } from './components/hexagon/hex2/hex2.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { AttributesComponent } from './components/attributes/attributes.componen
     Hex1Component,
     CurrentlyEffectsComponent,
     AttributesComponent,
+    Hex4Component,
+    Hex2Component,
   ],
   imports: [
     BrowserModule,
