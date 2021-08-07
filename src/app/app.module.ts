@@ -27,6 +27,7 @@ import { SecondaryAttributesComponent } from './components/secondary-attributes/
 import { StabilityComponent } from './components/stability/stability.component';
 import { ListSourcesDialogComponent } from './components/list-sources-dialog/list-sources-dialog.component';
 import { ListEffectsDialogComponent } from './components/list-effects-dialog/list-effects-dialog.component';
+import { TextAreasComponent } from './components/text-areas/text-areas.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ListEffectsDialogComponent } from './components/list-effects-dialog/lis
     StabilityComponent,
     ListSourcesDialogComponent,
     ListEffectsDialogComponent,
+    TextAreasComponent,
   ],
   imports: [
     BrowserModule,
