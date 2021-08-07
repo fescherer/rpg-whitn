@@ -27,10 +27,10 @@ export class CaracterSheetComponent implements OnInit {
   ];
 
   stats: hex3Interface[] = [
-    {title: "Vida", leftNumber: 0, rightNumber: 0, result: 0,},
-    {title: "Estabilidade", leftNumber: 0, rightNumber: 0, result: 0,},
-    {title: "Armadura", leftNumber: 0, rightNumber: 0, result: 0,},
-    {title: "Dano", leftNumber: 0, rightNumber: 0, result: 0,},
+    {title: "Vida", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
+    {title: "Estabilidade", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
+    {title: "Armadura", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
+    {title: "Dano", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
   ];
 
   data: characterSheetDataInterface = {
@@ -44,7 +44,7 @@ export class CaracterSheetComponent implements OnInit {
       currentlyEffects: {
         photo: "",
         effects: this.effects,
-        stats: [{title: "Vida atual", value: 0}, {title: "Estabilidade atual", value: 0}],
+        stats: [{title: "Vida atual", description: "", value: 0}, {title: "Estabilidade atual", description: "", value: 0}],
       },
       stats: this.stats,
     },
@@ -59,20 +59,20 @@ export class CaracterSheetComponent implements OnInit {
       {title: "Poder", value: 0, description: ""},
     ],  
     specialAttributes: [
-      {title: "Movimento", leftNumber: 0, rightNumber: 0, result: 0,},
-      {title: "Iniciativa", leftNumber: 0, rightNumber: 0, result: 0,},
+      {title: "Movimento", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
+      {title: "Iniciativa", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
     ],
-    specificAttributes: [
-      {title: "Atletismo",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
-      {title: "Percepção",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
-      {title: "Intimidação",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
-      {title: "Criaturas",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
-      {title: "Medicina",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
-      {title: "Sobrevivência",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
-      {title: "Furtividade",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
-      {title: "Terapia",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
-      {title: "Eletromecânica",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,},
-      {title: "Sorte",leftNumber: 0,modifier: 0,thirdValue: 0,result: 0,}      
+    secondaryAttributes: [
+      {title: "Atletismo", description: "",leftNumber: 0,modifier: 0,result: 0,},
+      {title: "Percepção", description: "",leftNumber: 0,modifier: 0,result: 0,},
+      {title: "Intimidação", description: "",leftNumber: 0,modifier: 0,result: 0,},
+      {title: "Criaturas", description: "",leftNumber: 0,modifier: 0,result: 0,},
+      {title: "Medicina", description: "",leftNumber: 0,modifier: 0,result: 0,},
+      {title: "Sobrevivência", description: "",leftNumber: 0,modifier: 0,result: 0,},
+      {title: "Furtividade", description: "",leftNumber: 0,modifier: 0,result: 0,},
+      {title: "Terapia", description: "",leftNumber: 0,modifier: 0,result: 0,},
+      {title: "Eletromecânica", description: "",leftNumber: 0,modifier: 0,result: 0,},
+      {title: "Sorte", description: "",leftNumber: 0,modifier: 0,result: 0,}      
     ]
   }
 

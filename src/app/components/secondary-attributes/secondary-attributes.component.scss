@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.attributes {
+  width: 20%;
+  box-sizing: border-box;
+  padding-bottom: 0.5rem;
+}

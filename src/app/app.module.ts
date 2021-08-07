@@ -23,6 +23,8 @@ import { CurrentlyEffectsComponent } from './components/table-game-characteristi
 import { AttributesComponent } from './components/attributes/attributes.component';
 import { Hex4Component } from './components/hexagon/hex4/hex4.component';
 import { Hex2Component } from './components/hexagon/hex2/hex2.component';
+import { SecondaryAttributesComponent } from './components/secondary-attributes/secondary-attributes.component';
+import { StabilityComponent } from './components/stability/stability.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { Hex2Component } from './components/hexagon/hex2/hex2.component';
     AttributesComponent,
     Hex4Component,
     Hex2Component,
+    SecondaryAttributesComponent,
+    StabilityComponent,
   ],
   imports: [
     BrowserModule,

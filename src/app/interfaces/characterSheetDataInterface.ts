@@ -18,5 +18,5 @@ export interface characterSheetDataInterface {
   },
   attributes: Array<hex2Interface>,
   specialAttributes: Array<hex3Interface>,
-  specificAttributes: Array<hex4Interface>
+  secondaryAttributes: Array<hex4Interface>
 }
