@@ -1,0 +1,86 @@
+<div class="container">
+  <span class="title">Bem vindo a criação de uma nova arma</span>
+  <form [formGroup]="formGroup" (ngSubmit)="submitData(formGroup)" style="width: 80%;">
+    <mat-dialog-content>
+
+      <mat-form-field apperance="fill" style="width: 100%">
+        <mat-label>Título</mat-label>
+        <input matInput formControlName="title" style="width: 100%;">
+        <mat-error >Preencha esse campo corretamente</mat-error>
+      </mat-form-field>
+
+      <div style="gap: 0.3rem; display: flex;">
+        <mat-form-field apperance="fill" style="width: 50%;">
+          <mat-label>Tipo</mat-label>
+          <mat-select formControlName="type">
+            <mat-option value="melee">Corpo a corpo</mat-option>
+            <mat-option value="ranged">A distância</mat-option>
+          </mat-select>
+          <mat-error >Preencha esse campo corretamente</mat-error>
+        </mat-form-field>
+        <mat-form-field apperance="fill" *ngIf="formGroup.get('type').value == 'melee'" style="width: 50%;">
+          <mat-label>Corpo a corpo</mat-label>
+          <mat-select formControlName="weaponType">
+            <mat-option *ngFor="let melee of weaponMeleeTypes" [value]="melee">{{melee}}</mat-option>
+          </mat-select>
+          <mat-error >Preencha esse campo corretamente</mat-error>
+        </mat-form-field>
+        <mat-form-field apperance="fill" *ngIf="formGroup.get('type').value == 'ranged'" style="width: 50%;">
+          <mat-label>A distância</mat-label>
+          <mat-select formControlName="weaponType">
+            <mat-option *ngFor="let ranged of weaponRangedTypes" [value]="ranged">{{ranged}}</mat-option>
+          </mat-select>
+          <mat-error >Preencha esse campo corretamente</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div style="gap: 0.3rem; display: flex;">
+        <mat-form-field apperance="fill" style="width: 50%;">
+          <mat-label>Classe</mat-label>
+          <mat-select formControlName="class">
+            <mat-option *ngFor="let classI of classes" [value]="classI">{{classI}}</mat-option>
+          </mat-select>
+          <mat-error >Preencha esse campo corretamente</mat-error>
+        </mat-form-field>
+
+        <mat-form-field apperance="fill" style="width: 50%;">
+          <mat-label>Distância</mat-label>
+          <mat-select formControlName="range">
+            <mat-option *ngFor="let range of ranges" [value]="range">{{range}}</mat-option>
+          </mat-select>
+          <mat-error >Preencha esse campo corretamente</mat-error>
+        </mat-form-field>
+      </div>
+
+      <mat-form-field apperance="fill" style="width: 100%">
+        <mat-label>Descrição da arma</mat-label>
+        <input matInput formControlName="description" style="width: 100%;">
+        <mat-error >Preencha esse campo corretamente</mat-error>
+      </mat-form-field>
+
+      <mat-form-field apperance="fill" style="width: 100%">
+        <mat-label>Dano</mat-label>
+        <input matInput formControlName="damage" style="width: 100%;">
+        <mat-error >Preencha esse campo corretamente</mat-error>
+      </mat-form-field>
+
+      <mat-form-field apperance="fill" style="width: 100%">
+        <mat-label>Cadência (0 se a arma for corpo a corpo)</mat-label>
+        <mat-select formControlName="rateOfFire">
+          <mat-option *ngFor="let rate of [0,1,2,3,4,5,6,7,8,9,10,11,12]" [value]="rate">{{rate}} turnos</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field apperance="fill" style="width: 100%">
+        <mat-label>URL da imagem (Opcional)</mat-label>
+        <input matInput formControlName="imageUrl" style="width: 100%;">
+        <mat-error >Preencha esse campo corretamente</mat-error>
+      </mat-form-field>
+
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-raised-button color="warn" mat-dialog-close type="button">Cancelar</button>
+      <button mat-raised-button color="primary" type="submit">Enviar</button>
+    </mat-dialog-actions>
+  </form>
+</div>

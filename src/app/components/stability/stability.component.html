@@ -17,7 +17,7 @@
             class="hover-effect"
             *ngFor="let source of stabilitySources"
           >
-            {{ source }}<mat-icon color="primary" (click)="removeSource(source)">remove_circle</mat-icon>
+            {{ source }}<mat-icon color="warn" (click)="removeSource(source)">remove_circle</mat-icon>
           </li>
         </ul>
       </div>
@@ -32,7 +32,7 @@
             class="hover-effect"
             *ngFor="let effect of stabilityEffects"
           >
-            {{ effect }}<mat-icon color="primary" (click)="removeEffect(effect)">remove_circle</mat-icon>
+            {{ effect }}<mat-icon color="warn" (click)="removeEffect(effect)">remove_circle</mat-icon>
           </li>
         </ul>
       </div>

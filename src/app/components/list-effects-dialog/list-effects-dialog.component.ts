@@ -41,7 +41,6 @@ export class ListEffectsDialogComponent implements OnInit {
         duration: form.value.duration,
         relatedTo: form.value.relatedTo
       }
-      console.log(form.value.title)
       this.dialogRef.close(object);
     }
   }

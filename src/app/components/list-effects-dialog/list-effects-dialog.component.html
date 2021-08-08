@@ -4,7 +4,7 @@
     <mat-dialog-content>
       <mat-form-field apperance="fill" style="width: 100%">
         <mat-label>Tipo</mat-label>
-        <mat-select  formControlName="title">
+        <mat-select formControlName="title">
           <mat-option *ngFor="let type of effectsTypes" [value]="type.title">{{ type.title }}</mat-option>
         </mat-select>
         <mat-error>Preencha esse campo antes de enviar</mat-error>

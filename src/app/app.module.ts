@@ -28,6 +28,10 @@ import { StabilityComponent } from './components/stability/stability.component';
 import { ListSourcesDialogComponent } from './components/list-sources-dialog/list-sources-dialog.component';
 import { ListEffectsDialogComponent } from './components/list-effects-dialog/list-effects-dialog.component';
 import { TextAreasComponent } from './components/text-areas/text-areas.component';
+import { InventoryComponent } from './components/inventory/inventory.component';
+import { WeaponsComponent } from './components/weapons/weapons.component';
+import { TemplatesComponent } from './components/templates/templates.component';
+import { WeaponDialogComponent } from './components/weapons/weapon-dialog/weapon-dialog.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +55,10 @@ import { TextAreasComponent } from './components/text-areas/text-areas.component
     ListSourcesDialogComponent,
     ListEffectsDialogComponent,
     TextAreasComponent,
+    InventoryComponent,
+    WeaponsComponent,
+    TemplatesComponent,
+    WeaponDialogComponent,
   ],
   imports: [
     BrowserModule,

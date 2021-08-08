@@ -1,0 +1,43 @@
+<mat-card>
+  <mat-card-header>
+    <mat-icon mat-card-avatar>fitness_center</mat-icon>
+    <mat-card-title>Armas</mat-card-title>
+    <mat-card-subtitle>Armado até os dentes</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="wraper">
+    <div *ngFor="let weapon of weapons" class="shadow-effect container">
+      <div class="removeWeapon"><mat-icon color="warn" class="hover-effect" (click)="removeWeapon(weapon)">remove_circle</mat-icon></div>
+      <div class="title">
+        <div *ngIf="weapon.imageUrl!=''"><img matCardAvatar alt="sem imagem" [src]="weapon.imageUrl"></div>
+        <span class="title-text">{{ weapon.title }}<span class="subtitle">{{ weapon.description }}</span></span>
+        <span>{{ weapon.class }}</span>
+      </div>
+      <div class="middle-container">
+        <div class="info">
+          <span>Tipo: {{ weapon.weaponType }}</span>
+          <span>Dano: {{ weapon.damage }}</span>
+          <span>Alcance: {{ weapon.range }}</span>
+        </div>
+        <div class="bullet-container" *ngIf="weapon.rateOfFire!=0">
+          <span>Cadência:</span>
+          <div class="bullet-container2">
+            <div 
+              *ngFor="let rate of weapon.rateOfFire;let indexOfelement=index;"
+              (click)="changeBulletState(indexOfelement, weapon)"
+              class="bullet hover-effect-translate"
+              [ngClass]="[rate ? 'bulletActivated' : '']"
+            >
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end" style="display: flex; align-items: center; gap: 2rem;">
+    <span class="hover-effect hover-effect-translate button-add" (click)="openWeaponDialog()"><mat-icon color="primary">add_circle</mat-icon></span>
+    <button mat-raised-button color="primary">
+      Salvar Dados
+    </button>
+  </mat-card-actions>
+</mat-card>
