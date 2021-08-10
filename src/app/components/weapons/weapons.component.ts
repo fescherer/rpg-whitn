@@ -15,54 +15,54 @@ export class WeaponsComponent implements OnInit {
 
   constructor(private dialog: MatDialog) { }
   hexDialogRef: MatDialogRef<WeaponDialogComponent>;
-  weapons: Array<weaponInterface> = [
-    {
-      type: 'melee',
-      class: 'D',
-      title: "Faca flamejante",
-      weaponType: "Faca",
-      description: "uma faca pegando fogo",
-      damage: "d6",
-      range: "Curto",
-      rateOfFire: [],
-      imageUrl: "https://static.remove.bg/remove-bg-web/3661dd45c31a4ff23941855a7e4cedbbf6973643/assets/start_remove-79a4598a05a77ca999df1dcb434160994b6fde2c3e9101984fb1be0f16d0a74e.png",
-    },
-    {
-      type: 'ranged',
-      class: 'D',
-      title: "Pistola a laser",
-      weaponType: "Pistola",
-      description: "Uma pistola que solta laser",
-      damage: "d8",
-      range: "Médio",
-      rateOfFire: [true,true,true,false,true],
-      imageUrl: "",
-    },
-    {
-      type: 'melee',
-      class: 'D',
-      title: "Faca flamejante",
-      weaponType: "Faca",
-      description: "uma faca pegando fogo",
-      damage: "d6",
-      range: "Curto",
-      rateOfFire: [],
-      imageUrl: "https://static.remove.bg/remove-bg-web/3661dd45c31a4ff23941855a7e4cedbbf6973643/assets/start_remove-79a4598a05a77ca999df1dcb434160994b6fde2c3e9101984fb1be0f16d0a74e.png",
-    },
-    {
-      type: 'melee',
-      class: 'D',
-      title: "Faca flamejante",
-      weaponType: "Faca",
-      description: "uma faca pegando fogo",
-      damage: "d6",
-      range: "Curto",
-      rateOfFire: [],
-      imageUrl: "https://static.remove.bg/remove-bg-web/3661dd45c31a4ff23941855a7e4cedbbf6973643/assets/start_remove-79a4598a05a77ca999df1dcb434160994b6fde2c3e9101984fb1be0f16d0a74e.png",
-    },
+  weapons: Array<weaponInterface> = [];
+  //   {
+  //     type: 'melee',
+  //     class: 'D',
+  //     title: "Faca flamejante",
+  //     weaponType: "Faca",
+  //     description: "uma faca pegando fogo",
+  //     damage: "d6",
+  //     range: "Curto",
+  //     rateOfFire: [],
+  //     imageUrl: "https://static.remove.bg/remove-bg-web/3661dd45c31a4ff23941855a7e4cedbbf6973643/assets/start_remove-79a4598a05a77ca999df1dcb434160994b6fde2c3e9101984fb1be0f16d0a74e.png",
+  //   },
+  //   {
+  //     type: 'ranged',
+  //     class: 'D',
+  //     title: "Pistola a laser",
+  //     weaponType: "Pistola",
+  //     description: "Uma pistola que solta laser",
+  //     damage: "d8",
+  //     range: "Médio",
+  //     rateOfFire: [true,true,true,false,true],
+  //     imageUrl: "",
+  //   },
+  //   {
+  //     type: 'melee',
+  //     class: 'D',
+  //     title: "Faca flamejante",
+  //     weaponType: "Faca",
+  //     description: "uma faca pegando fogo",
+  //     damage: "d6",
+  //     range: "Curto",
+  //     rateOfFire: [],
+  //     imageUrl: "https://static.remove.bg/remove-bg-web/3661dd45c31a4ff23941855a7e4cedbbf6973643/assets/start_remove-79a4598a05a77ca999df1dcb434160994b6fde2c3e9101984fb1be0f16d0a74e.png",
+  //   },
+  //   {
+  //     type: 'melee',
+  //     class: 'D',
+  //     title: "Faca flamejante",
+  //     weaponType: "Faca",
+  //     description: "uma faca pegando fogo",
+  //     damage: "d6",
+  //     range: "Curto",
+  //     rateOfFire: [],
+  //     imageUrl: "https://static.remove.bg/remove-bg-web/3661dd45c31a4ff23941855a7e4cedbbf6973643/assets/start_remove-79a4598a05a77ca999df1dcb434160994b6fde2c3e9101984fb1be0f16d0a74e.png",
+  //   },
     
 
-  ];
+  // ];
 
   ngOnInit(): void {
 
