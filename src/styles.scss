@@ -13,8 +13,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$whitn-primary: mat-palette($mat-teal, 800);
-$whitn-accent: mat-palette($mat-deep-purple, 700, A200);
+$whitn-primary: mat-palette($mat-deep-purple, 700, A200);
+$whitn-accent: mat-palette($mat-teal, 800);
 
 // The warn palette is optional (defaults to red).
 $whitn-warn: mat-palette($mat-red);
@@ -42,11 +42,11 @@ body { margin: 0; font-family: "Special Elite", sans-serif; background-color: va
 
 
 body {
---dark-primary-color: #00796B;
+--dark-primary-color: #19064d;
 --default-primary-color: #009688;
 --light-primary-color: #d9ecec;
 --text-primary-color: #FFFFFF;
---accent-color: #1c0853;
+--accent-color: #009688;
 --primary-text-color:#212121;
 --secondary-text-color: #757575;
 --divider-color: #BDBDBD;
