@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { characterSheetDataInterface } from '../interfaces/characterSheetDataInterface';
 import { fireStoreDataInterface } from '../interfaces/fireStoraDataInterface';
+import { Observable } from 'rxjs';
+import { map } from "rxjs/operators";
+import { pageInterface } from '../interfaces/pageInterface';
 
 @Injectable({
   providedIn: 'root'
@@ -25,6 +28,14 @@ export class FirestoreServiceService {
   }
 
   getCharacterSheetList() {
-    this.angularFire.collection("page").snapshotChanges();
+    return this.angularFire.collection("page").snapshotChanges().pipe(map(
+      changes => {
+        return changes.map(a => {
+          const data = a.payload.doc.data() as pageInterface;
+          data.firebaseId = a.payload.doc.id;
+          return data;
+        })
+      }
+    ));
   }
 }

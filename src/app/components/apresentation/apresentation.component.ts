@@ -23,12 +23,6 @@ export class ApresentationComponent implements OnInit {
       age:['',[Validators.required, Validators.pattern("^[0-9]*$")]],
       gender:['']
     })
-  }
-
-  save() {
-    if(this.apresentationForm.valid){
-      this.pageService.createCharacterSheet(this.apresentationForm.value)
-    }
-      
-  }
+  }   
+  
 }
