@@ -52,6 +52,7 @@ body {
 --divider-color: #BDBDBD;
 --backgorund-color: #f0f0f0;
 --shadow-color: #888888;
+--warn-primary-color: #f44336;
 }
 
 .mat-card {
@@ -92,4 +93,20 @@ button {
 
 .my-tooltip {
   white-space: pre-line;
+}
+
+.snackbar-success {
+  background-color: var(--default-primary-color) !important;
+  color: #eee !important;
+  .mat-simple-snackbar-action {
+      color: #eee !important;
+  }
+}
+
+.snackbar-error {
+  background-color: var(--warn-primary-color) !important;
+  color: #eee !important;
+  .mat-simple-snackbar-action {
+      color: #eee !important;
+  }
 }

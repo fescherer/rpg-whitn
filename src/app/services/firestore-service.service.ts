@@ -1,26 +1,34 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { characterSheetDataInterface } from '../interfaces/characterSheetDataInterface';
-import { fireStoreDataInterface } from '../interfaces/fireStoraDataInterface';
-import { Observable } from 'rxjs';
-import { map } from "rxjs/operators";
 import { pageInterface } from '../interfaces/pageInterface';
+import { rejects } from 'assert';
+import { SnackBarService } from './snack-bar.service';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FirestoreServiceService {
 
-  constructor(private angularFire: AngularFirestore) { }
+  constructor(
+    private angularFire: AngularFirestore,
+    private snackBar: SnackBarService
+    ) { }
 
-  createCharacterSheet(data: fireStoreDataInterface) {
-    return new Promise<fireStoreDataInterface>((resolve, reject) => {
-      this.angularFire.collection("page").add(data).then((res) => {}, (err) => {reject(err)})
+  createCharacterSheet(data: pageInterface) {
+    return new Promise<pageInterface>((resolve, reject) => {
+      this.angularFire.collection("page").doc(data.id).set(data).then(
+        (res) => {this.snackBar.showSuccessSnackBar("Ficha criada")},
+        (err) => {rejects(err); this.snackBar.showErrorSnackBar("Erro na criação da ficha")}
+        )
     })
   }
 
-  updateCharacterSheet(characterSheet: any) {
-    this.angularFire.collection("page").doc()
+  updateCharacterSheet(page: pageInterface) {
+    this.angularFire.collection("page").doc(`${page.id}`).update(page).then(
+      (res) => {this.snackBar.showSuccessSnackBar("A ficha foi atualizada")},
+      (err) => {rejects(err); this.snackBar.showErrorSnackBar("A ficha não foi atualizada")}
+      )
   }
 
   deleteCharacterSheet() {
@@ -32,10 +40,10 @@ export class FirestoreServiceService {
       changes => {
         return changes.map(a => {
           const data = a.payload.doc.data() as pageInterface;
-          data.firebaseId = a.payload.doc.id;
           return data;
         })
       }
     ));
   }
+
 }

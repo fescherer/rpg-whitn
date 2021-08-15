@@ -43,9 +43,9 @@ export class PageService {
       stats: this.stats,
     },
     attributes: [
-      {title: "Força", value: 120, description: "Sua capacidade de carregar peso e socar alguém"},
+      {title: "Força", value: 0, description: "Sua capacidade de carregar peso e socar alguém"},
       {title: "Destreza", value: 0, description: ""},
-      {title: "Constituição", value: 20, description: ""},
+      {title: "Constituição", value: 0, description: ""},
       {title: "Porte", value: 0, description: ""},
       {title: "Inteligência", value: 0, description: ""},
       {title: "Sabedoria", value: 0, description: ""},
@@ -74,10 +74,8 @@ export class PageService {
     data: this.data,
     id: ""
   }
-
   
   constructor() { }
-
 
   getDefaultData() {
     return this.defaultData;

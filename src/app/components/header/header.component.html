@@ -7,7 +7,7 @@
     <p class="title">Character Sheet V2.0</p>
     <p class="subtitle">Ficha: {{ roomId }}</p>
     <div class="button-container">
-      <button mat-raised-button color="primary">Salvar dados</button>
+      <button mat-raised-button color="primary" (click)="updateData()">Salvar dados</button>
       <button mat-raised-button color="primary">Atualizar página</button>
       <button mat-raised-button color="warn">Deletar ficha</button>
     </div>

@@ -1,4 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { pageInterface } from 'src/app/interfaces/pageInterface';
+import { FirestoreServiceService } from 'src/app/services/firestore-service.service';
+import { PageService } from 'src/app/services/page.service';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +10,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Input() roomId: string;
+  @Input() data: pageInterface;
   
-  constructor() { }
+  constructor(
+    private fireStoreService: FirestoreServiceService,
+    ) { }
 
   ngOnInit(): void {
   }
 
+  updateData() {
+    this.fireStoreService.updateCharacterSheet(this.data);
+  }
+  
 }

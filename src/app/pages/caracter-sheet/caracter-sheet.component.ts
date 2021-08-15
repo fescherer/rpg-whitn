@@ -3,6 +3,7 @@ import {ActivatedRoute} from "@angular/router";
 import { pageInterface } from 'src/app/interfaces/pageInterface';
 import { FirestoreServiceService } from 'src/app/services/firestore-service.service';
 import { PageService } from 'src/app/services/page.service';
+import { SnackBarService } from 'src/app/services/snack-bar.service';
 
 @Component({
   selector: 'app-caracter-sheet',
@@ -19,6 +20,7 @@ export class CaracterSheetComponent implements OnInit {
     private route: ActivatedRoute,
     private pageService: PageService,
     private firestoreService: FirestoreServiceService,
+    private snackbarService: SnackBarService,
     ) {
     this.data = pageService.getDefaultData();
     this.route.params.subscribe( params => this.data.id = params.id);
