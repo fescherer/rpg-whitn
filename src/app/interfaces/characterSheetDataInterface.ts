@@ -11,7 +11,7 @@ export interface characterSheetDataInterface {
   secondaryAttributes: Array<hex4Interface>,
   stability: {
     stabilitySources: Array<string>,
-    developedEffect: Array<effectTypeInterface>
+    stabilityEffects: Array<effectTypeInterface>
   },
   weapons: Array<weaponInterface>,
   inventory: string,

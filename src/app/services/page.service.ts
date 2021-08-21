@@ -71,7 +71,7 @@ export class PageService {
     ],
     stability: {
       stabilitySources: [],
-      developedEffect: []
+      stabilityEffects: []
     },
     weapons: [],
     inventory: '',

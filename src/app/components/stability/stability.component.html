@@ -15,7 +15,7 @@
         <ul class="list">
           <li 
             class="hover-effect"
-            *ngFor="let source of stabilitySources"
+            *ngFor="let source of data.stabilitySources"
           >
             {{ source }}<mat-icon color="warn" (click)="removeSource(source)">remove_circle</mat-icon>
           </li>
@@ -30,7 +30,7 @@
         <ul class="list">
           <li 
             class="hover-effect"
-            *ngFor="let effect of stabilityEffects"
+            *ngFor="let effect of data.stabilityEffects"
           >
             {{ effect }}<mat-icon color="warn" (click)="removeEffect(effect)">remove_circle</mat-icon>
           </li>
