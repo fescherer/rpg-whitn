@@ -4,21 +4,9 @@ import { effectTypeInterface } from "./stabilityInterface";
 import { weaponInterface } from "./weaponInterface";
 
 export interface characterSheetDataInterface {
-  apresentation: {
-    name: string,
-    motivation: string,
-    age: string,
-    gender: string,
-  },
-  gameplayCharacteristics: {
-    currentlyEffects: {
-      photo: string,
-      effects: Array<effectInterface>,
-      stats: Array<hex1Interface>;
-    },
-    stats: Array<hex3Interface>;
-  },
-  attributes: Array<hex2Interface>,
+  apresentation: apresentationInterface,
+  gameplayCharacteristics: gameplayCharacteristicsInterface;
+  attributes: attributesInterface,
   specialAttributes: Array<hex3Interface>,
   secondaryAttributes: Array<hex4Interface>,
   stability: {
@@ -32,4 +20,34 @@ export interface characterSheetDataInterface {
     history: string
   }
 
+}
+
+export interface attributesInterface {
+  FOR: hex2Interface;
+  DES: hex2Interface;
+  CON: hex2Interface;
+  POR: hex2Interface;
+  INT: hex2Interface;
+  SAB: hex2Interface;
+  CAR: hex2Interface;
+  POD: hex2Interface; 
+}
+
+export interface apresentationInterface {
+  name: string,
+  motivation: string,
+  age: string,
+  height: string,
+  weight: string,
+}
+
+export interface gameplayCharacteristicsInterface {
+  currentlyEffects: currentylEffectsInterface;
+  stats: Array<hex3Interface>;
+}
+
+export interface currentylEffectsInterface{
+  photo: string,
+  effects: Array<effectInterface>,
+  stats: Array<hex1Interface>;
 }

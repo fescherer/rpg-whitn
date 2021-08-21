@@ -11,7 +11,7 @@ import { SnackBarService } from 'src/app/services/snack-bar.service';
   styleUrls: ['./caracter-sheet.component.scss']
 })
 export class CaracterSheetComponent implements OnInit {
-  data: any;
+  data: pageInterface;
   listSheets: any;
   hasPage: boolean = false;
   savedData: pageInterface;
@@ -40,6 +40,7 @@ export class CaracterSheetComponent implements OnInit {
         this.firestoreService.createCharacterSheet(this.data);
       } else {
         this.data = this.savedData;
+        this.data.data.apresentation
       }
     });
   }

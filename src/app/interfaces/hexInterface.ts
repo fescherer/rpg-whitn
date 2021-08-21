@@ -5,9 +5,9 @@ export interface hex1Interface {
 }
 
 export interface hex3Interface {
+  type: string,
   title: string,
   description: string,
-  leftNumber: number,
   rightNumber: number,
   result: number,
 }

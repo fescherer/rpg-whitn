@@ -21,10 +21,10 @@ export class PageService {
   ];
 
   stats: hex3Interface[] = [
-    {title: "Vida", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
-    {title: "Estabilidade", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
-    {title: "Armadura", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
-    {title: "Dano", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
+    {type: 'life', title: "Vida", description: "", rightNumber: 0, result: 0,},
+    {type: 'stability', title: "Estabilidade", description: "", rightNumber: 0, result: 0,},
+    {type: 'armor', title: "Armadura", description: "", rightNumber: 0, result: 0,},
+    {type: 'damage', title: "Dano", description: "", rightNumber: 0, result: 0,},
   ];
 
   data: characterSheetDataInterface = {
@@ -32,7 +32,8 @@ export class PageService {
       name: "",
       motivation: "",
       age: "",
-      gender: "",
+      height: "",
+      weight: "",
     },
     gameplayCharacteristics: {
       currentlyEffects: {
@@ -42,19 +43,19 @@ export class PageService {
       },
       stats: this.stats,
     },
-    attributes: [
-      {title: "Força", value: 0, description: "Sua capacidade de carregar peso e socar alguém"},
-      {title: "Destreza", value: 0, description: ""},
-      {title: "Constituição", value: 0, description: ""},
-      {title: "Porte", value: 0, description: ""},
-      {title: "Inteligência", value: 0, description: ""},
-      {title: "Sabedoria", value: 0, description: ""},
-      {title: "Carisma", value: 0, description: ""},
-      {title: "Poder", value: 0, description: ""},
-    ],  
+    attributes: {
+      FOR: {title: "Força", value: 0, description: "Sua capacidade de carregar peso e socar alguém"},
+      DES: {title: "Destreza", value: 0, description: ""},
+      CON: {title: "Constituição", value: 0, description: ""},
+      POR: {title: "Porte", value: 0, description: ""},
+      INT: {title: "Inteligência", value: 0, description: ""},
+      SAB: {title: "Sabedoria", value: 0, description: ""},
+      CAR: {title: "Carisma", value: 0, description: ""},
+      POD: {title: "Poder", value: 0, description: ""},
+    },  
     specialAttributes: [
-      {title: "Movimento", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
-      {title: "Iniciativa", description: "", leftNumber: 0, rightNumber: 0, result: 0,},
+      {type: 'movement', title: "Movimento", description: "",  rightNumber: 0, result: 0,},
+      {type: 'iniciative',title: "Iniciativa", description: "", rightNumber: 0, result: 0,},
     ],
     secondaryAttributes: [
       {title: "Atletismo", description: "",leftNumber: 0,modifier: 0,result: 0,},
@@ -67,7 +68,17 @@ export class PageService {
       {title: "Terapia", description: "",leftNumber: 0,modifier: 0,result: 0,},
       {title: "Eletromecânica", description: "",leftNumber: 0,modifier: 0,result: 0,},
       {title: "Sorte", description: "",leftNumber: 0,modifier: 0,result: 0,}      
-    ]
+    ],
+    stability: {
+      stabilitySources: [],
+      developedEffect: []
+    },
+    weapons: [],
+    inventory: '',
+    textAreas: {
+      annotations: '',
+      history: ''
+    }
   }
 
   defaultData = {

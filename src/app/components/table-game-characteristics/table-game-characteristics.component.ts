@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { characterSheetDataInterface } from 'src/app/interfaces/characterSheetDataInterface';
+import { characterSheetDataInterface, gameplayCharacteristicsInterface } from 'src/app/interfaces/characterSheetDataInterface';
 import { hex3Interface } from 'src/app/interfaces/hexInterface';
 
 @Component({
@@ -13,10 +13,6 @@ export class TableGameCharacteristicsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  save() {
-    console.log('oi');
   }
 
 }

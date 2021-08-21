@@ -9,20 +9,27 @@
       <form [formGroup]="apresentationForm" class="wrapper">
         <mat-form-field apperance="fill" #name >
           <mat-label>Nome</mat-label>
-          <input matInput formControlName="name">
+          <input matInput formControlName="name" (change)="saveObject()" [value]="this.data.name">
         </mat-form-field>
         <mat-form-field apperance="fill" #motivation >
           <mat-label>Motivação</mat-label>
-          <input matInput formControlName="motivation">
+          <input matInput formControlName="motivation" (change)="saveObject()" [value]="this.data.motivation">
         </mat-form-field>
-        <div class="age-gender-container">
-          <mat-form-field apperance="fill" #age >
-            <mat-label>Idade</mat-label>
-            <input matInput formControlName="age">
+        <div class="age-height-weight-container">
+          <mat-form-field apperance="fill" #age>
+            <mat-label>Idade (anos)</mat-label>
+            <input matInput formControlName="age" (change)="saveObject()" [value]="this.data.age">
+            <mat-error>Digite números</mat-error>
           </mat-form-field>
-          <mat-form-field apperance="fill" #gender >
-            <mat-label>Gênero</mat-label>
-            <input matInput formControlName="gender">
+          <mat-form-field apperance="fill" #height >
+            <mat-label>Altura (metros)</mat-label>
+            <input matInput formControlName="height" (change)="saveObject()" [value]="this.data.height">
+            <mat-error>Digite números</mat-error>
+          </mat-form-field>
+          <mat-form-field apperance="fill" #weight >
+            <mat-label>Peso (kilos)</mat-label>
+            <input matInput formControlName="weight" (change)="saveObject()" [value]="this.data.weight">
+            <mat-error>Digite números</mat-error>
           </mat-form-field>
         </div>
       </form>

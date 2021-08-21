@@ -8,11 +8,11 @@ import { characterSheetDataInterface } from 'src/app/interfaces/characterSheetDa
 })
 export class AttributesComponent implements OnInit {
   @Input() data: characterSheetDataInterface;
-
-
+  
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.data.specialAttributes)
   }
 
 }

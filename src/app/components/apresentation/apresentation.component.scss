@@ -4,8 +4,13 @@
   flex-direction: column;
 }
 
-.age-gender-container {
+.age-height-weight-container {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .mat-form-field {
+    width: 31%;
+  }
 }
