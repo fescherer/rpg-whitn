@@ -14,7 +14,9 @@ export interface characterSheetDataInterface {
     stabilityEffects: Array<effectTypeInterface>
   },
   weapons: Array<weaponInterface>,
-  inventory: string,
+  inventory: {
+    inventory: string,
+  },
   textAreas: {
     annotations: string,
     history: string

@@ -74,7 +74,9 @@ export class PageService {
       stabilityEffects: []
     },
     weapons: [],
-    inventory: '',
+    inventory: {
+      inventory: '',
+    },
     textAreas: {
       annotations: '',
       history: ''

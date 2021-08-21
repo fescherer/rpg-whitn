@@ -12,7 +12,6 @@ export class AttributesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.data.specialAttributes)
   }
 
 }

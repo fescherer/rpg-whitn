@@ -17,7 +17,6 @@ export class CurrentlyEffectsComponent implements OnInit {
   constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
-    console.log(this.data.photo)
   }
  
   searchImage() {
