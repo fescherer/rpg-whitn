@@ -58,16 +58,16 @@ export class PageService {
       {type: 'iniciative',title: "Iniciativa", description: "", rightNumber: 0, result: 0,},
     ],
     secondaryAttributes: [
-      {title: "Atletismo", description: "",leftNumber: 0,modifier: 0,result: 0,},
-      {title: "Percepção", description: "",leftNumber: 0,modifier: 0,result: 0,},
-      {title: "Intimidação", description: "",leftNumber: 0,modifier: 0,result: 0,},
-      {title: "Criaturas", description: "",leftNumber: 0,modifier: 0,result: 0,},
-      {title: "Medicina", description: "",leftNumber: 0,modifier: 0,result: 0,},
-      {title: "Sobrevivência", description: "",leftNumber: 0,modifier: 0,result: 0,},
-      {title: "Furtividade", description: "",leftNumber: 0,modifier: 0,result: 0,},
-      {title: "Terapia", description: "",leftNumber: 0,modifier: 0,result: 0,},
-      {title: "Eletromecânica", description: "",leftNumber: 0,modifier: 0,result: 0,},
-      {title: "Sorte", description: "",leftNumber: 0,modifier: 0,result: 0,}      
+      {type: 'athletics', title: "Atletismo", description: "", modifier: 0,result: 0,},
+      {type: 'perception', title: "Percepção", description: "", modifier: 0,result: 0,},
+      {type: 'intimidation', title: "Intimidação", description: "", modifier: 0,result: 0,},
+      {type: 'creatures', title: "Criaturas", description: "", modifier: 0,result: 0,},
+      {type: 'medicine', title: "Medicina", description: "", modifier: 0,result: 0,},
+      {type: 'survivalist', title: "Sobrevivência", description: "", modifier: 0,result: 0,},
+      {type: 'furtivity', title: "Furtividade", description: "", modifier: 0,result: 0,},
+      {type: 'therapy', title: "Terapia", description: "", modifier: 0,result: 0,},
+      {type: 'eletromechanics', title: "Eletromecânica", description: "", modifier: 0,result: 0,},
+      {type: 'luck', title: "Sorte", description: "", modifier: 0,result: 0,}      
     ],
     stability: {
       stabilitySources: [],

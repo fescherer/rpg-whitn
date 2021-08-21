@@ -19,9 +19,9 @@ export interface hex2Interface {
 }
 
 export interface hex4Interface {
+  type: string,
   title: string,
   description: string,
-  leftNumber: number,
   modifier: number,
   result: number,
 }

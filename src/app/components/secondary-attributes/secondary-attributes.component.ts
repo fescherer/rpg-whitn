@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { characterSheetDataInterface } from 'src/app/interfaces/characterSheetDataInterface';
+import { attributesInterface, characterSheetDataInterface } from 'src/app/interfaces/characterSheetDataInterface';
 
 @Component({
   selector: 'app-secondary-attributes',
@@ -8,6 +8,7 @@ import { characterSheetDataInterface } from 'src/app/interfaces/characterSheetDa
 })
 export class SecondaryAttributesComponent implements OnInit {
   @Input() data: characterSheetDataInterface;
+  @Input() attributes: attributesInterface;
   constructor() { }
 
   ngOnInit(): void {

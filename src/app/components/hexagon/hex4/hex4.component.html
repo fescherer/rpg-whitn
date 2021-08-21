@@ -4,8 +4,8 @@
       <div class="content ">
         <div class="row" matTooltip="Essa é a terça parte de seu atributo">{{this.thirdValue}}</div>
         <div class="row separator">
-          <div matTooltip="A quantidade padrão">{{ data.leftNumber }}</div>
-          <div class="hover-effect change-button" (click)="openDialog()" matTooltip="Sua quantidade de modificador" >+ {{ data.result }}</div>
+          <div matTooltip="A quantidade padrão">{{ calcType(data.type) }}</div>
+          <div class="hover-effect change-button" (click)="openDialog()" matTooltip="Sua quantidade de modificador" >+ {{ data.modifier }}</div>
         </div>
         <div class="total" matTooltip="Quantidade total">{{ data.result }}</div>
       </div>

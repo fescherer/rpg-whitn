@@ -92,6 +92,8 @@ export class Hex3Component implements OnInit {
         this.leftNumber = aux;
         this.calcResult();
         return aux;
+      default:
+        return 0;
     }
   }
 
