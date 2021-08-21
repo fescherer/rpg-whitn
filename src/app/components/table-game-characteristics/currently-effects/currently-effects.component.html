@@ -11,7 +11,7 @@
       <app-effects *ngFor="let effect of data.effects" [data]="effect"></app-effects>
     </div>
     <div class="stats">
-      <app-hex1 *ngFor="let i of data.stats" [title]="i.title" [value]="i.value"></app-hex1>
+      <app-hex1 *ngFor="let i of data.stats" [data]="i"></app-hex1>
     </div>
   </div>
 </div>

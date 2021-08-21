@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { filter } from 'rxjs/operators';
+import { hex1Interface } from 'src/app/interfaces/hexInterface';
 import { HexDialogComponent } from '../hex-dialog/hex-dialog.component';
 
 @Component({
@@ -9,8 +10,7 @@ import { HexDialogComponent } from '../hex-dialog/hex-dialog.component';
   styleUrls: ['./hex1.component.scss']
 })
 export class Hex1Component implements OnInit {
-  @Input() title: string;
-  @Input() value: number;
+  @Input() data: hex1Interface;
 
   constructor(private dialog: MatDialog) { }
   hexDialogRef: MatDialogRef<HexDialogComponent>;
@@ -19,20 +19,20 @@ export class Hex1Component implements OnInit {
   }
 
   openDialog(): void {
-    this.hexDialogRef = this.dialog.open(HexDialogComponent, {data: {title: this.title, label: 'valor'}});
+    this.hexDialogRef = this.dialog.open(HexDialogComponent, {data: {title: this.data.title, label: 'valor'}});
     this.hexDialogRef.afterClosed()
       .pipe(filter(newValue => newValue))
       .subscribe(newValue => {
-        this.value = parseInt(newValue);
+        this.data.value = parseInt(newValue);
       });
   }
 
   addValue(): void {
-    this.value=this.value+1;
+    this.data.value=this.data.value+1;
   }
 
   decreaseValue(): void {
-    this.value=this.value-1;
+    this.data.value=this.data.value-1;
   }
 
 }
