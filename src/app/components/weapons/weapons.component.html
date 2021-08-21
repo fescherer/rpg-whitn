@@ -5,7 +5,7 @@
     <mat-card-subtitle>Armado até os dentes</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content class="wraper">
-    <div *ngFor="let weapon of weapons" class="shadow-effect container">
+    <div *ngFor="let weapon of this.data" class="shadow-effect container">
       <div class="removeWeapon"><mat-icon color="warn" class="hover-effect" (click)="removeWeapon(weapon)">remove_circle</mat-icon></div>
       <div class="title">
         <div *ngIf="weapon.imageUrl!=''"><img matCardAvatar alt="sem imagem" [src]="weapon.imageUrl"></div>

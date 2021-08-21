@@ -11,7 +11,7 @@
       <div class="right-container">
         <app-attributes [data]="data.data"></app-attributes>
         <app-secondary-attributes [data]="data.data" [attributes]="data.data.attributes"></app-secondary-attributes>
-        <app-weapons></app-weapons>
+        <app-weapons [data]="data.data.weapons"></app-weapons>
         <app-inventory></app-inventory>
         <app-templates></app-templates>
       </div>
