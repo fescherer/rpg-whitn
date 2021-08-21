@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { ApresentationComponent } from './components/apresentation/apresentation.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TableGameCharacteristicsComponent } from './components/table-game-characteristics/table-game-characteristics.component';
 import { CaracterSheetComponent } from './pages/caracter-sheet/caracter-sheet.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -64,6 +64,7 @@ import { WeaponDialogComponent } from './components/weapons/weapon-dialog/weapon
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MaterialModule,
     ReactiveFormsModule,
     AngularFirestoreModule,

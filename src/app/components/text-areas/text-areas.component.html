@@ -9,12 +9,12 @@
 
       <div class="annotations shadow-effect hover-effect-translate">
         <div class="title">Anotações</div>
-        <span class="text-area-style" contenteditable role="textbox"></span>
+        <textarea class="text-area-style" [(ngModel)]="data.annotations">{{ data.annotations }}</textarea>
       </div>
 
       <div class="history shadow-effect hover-effect-translate">
         <div class="title">História</div>
-        <span class="text-area-style" contenteditable role="textbox"></span>
+        <textarea class="text-area-style" [(ngModel)]="data.history">{{ data.history }}</textarea>
       </div>
 
     </div>
