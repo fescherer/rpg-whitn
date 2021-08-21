@@ -12,21 +12,19 @@ import { UrlDialogComponent } from './url-dialog/url-dialog.component';
 })
 export class CurrentlyEffectsComponent implements OnInit {
   @Input() data: currentylEffectsInterface;
-  imgSource: string;
-
   urlRequestDialog: MatDialogRef<UrlDialogComponent>;
 
   constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
-    this.imgSource = this.data.photo;
+    console.log(this.data.photo)
   }
  
   searchImage() {
     this.urlRequestDialog = this.dialog.open(UrlDialogComponent);
     this.urlRequestDialog.afterClosed()
       .pipe(filter(url => url))
-      .subscribe(url => this.imgSource = url);
+      .subscribe(url => this.data.photo = url);
   }
 
 }

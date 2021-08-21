@@ -9,15 +9,15 @@ export class PageService {
   id: string;
   
   effects = [
-    {state: true, color: 'yellow', title: 'Stunned'},
+    {state: false, color: 'yellow', title: 'Stunned'},
     {state: false, color: 'orange', title: 'Damaged'},
-    {state: true, color: 'red', title: 'H. Damaged'},
-    {state: true, color: 'yellow', title: 'Weakened'},
-    {state: true, color: 'orange', title: 'Não sei'},
+    {state: false, color: 'red', title: 'H. Damaged'},
+    {state: false, color: 'yellow', title: 'Weakened'},
+    {state: false, color: 'orange', title: 'Não sei'},
     {state: false, color: 'red', title: 'Broken'},
-    {state: true, color: 'green', title: 'Weakened'},
-    {state: true, color: 'blue', title: 'string'},
-    {state: true, color: 'purple', title: 'Broken'},
+    {state: false, color: 'green', title: 'Weakened'},
+    {state: false, color: 'blue', title: 'string'},
+    {state: false, color: 'purple', title: 'Broken'},
   ];
 
   stats: hex3Interface[] = [
