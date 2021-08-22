@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./templates.component.scss']
 })
 export class TemplatesComponent implements OnInit {
-
+  foods =[
+    {value:'apple', viewValue:'Apple'},
+    {value:'pineaple', viewValue:'Pineaple'},
+    {value:'grape', viewValue:'Grape'}
+  ]
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  createTemplate() {
+
   }
 
 }
