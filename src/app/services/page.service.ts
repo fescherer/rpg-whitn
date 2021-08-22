@@ -32,12 +32,10 @@ export class PageService {
       name: "",
       motivation: "",
       age: "",
-      height: "",
-      weight: "",
+      photo: "",
     },
     gameplayCharacteristics: {
       currentlyEffects: {
-        photo: "",
         effects: this.effects,
         stats: [{title: "Vida atual", description: "", value: 0}, {title: "Estabilidade atual", description: "", value: 0}],
       },

@@ -1,6 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, NgForm, Validators} from '@angular/forms';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { filter } from 'rxjs/operators';
 import { apresentationInterface } from 'src/app/interfaces/characterSheetDataInterface';
+import { UrlDialogComponent } from '../table-game-characteristics/currently-effects/url-dialog/url-dialog.component';
 
 @Component({
   selector: 'app-apresentation',
@@ -10,9 +13,11 @@ import { apresentationInterface } from 'src/app/interfaces/characterSheetDataInt
 export class ApresentationComponent implements OnInit {
   @Input() data: apresentationInterface;
   apresentationForm: FormGroup;
+  urlRequestDialog: MatDialogRef<UrlDialogComponent>;
 
   constructor(
     private formBuilder: FormBuilder,
+    private dialog: MatDialog,
   ) { }
 
   ngOnInit(): void {
@@ -20,16 +25,12 @@ export class ApresentationComponent implements OnInit {
       name: [''],
       motivation: [''],
       age: ['', [Validators.required, Validators.pattern("[0-9]*\.?[0-9]*")]],
-      height:['', [Validators.required, Validators.pattern("[0-9]*\.?[0-9]*")]],
-      weight:['', [Validators.required, Validators.pattern("[0-9]*\.?[0-9]*")]]
     })
 
     this.apresentationForm.setValue({
       name: this.data.name,
       motivation: this.data.motivation,
       age: this.data.age,
-      height: this.data.height,
-      weight: this.data.weight,
     });
   }
 
@@ -38,9 +39,14 @@ export class ApresentationComponent implements OnInit {
       this.data.name = this.apresentationForm.value.name;
       this.data.motivation = this.apresentationForm.value.motivation;
       this.data.age = this.apresentationForm.value.age;
-      this.data.height = this.apresentationForm.value.height;
-      this.data.weight = this.apresentationForm.value.weight;
     }
+  }
+
+  searchImage() {
+    this.urlRequestDialog = this.dialog.open(UrlDialogComponent);
+    this.urlRequestDialog.afterClosed()
+      .pipe(filter(url => url))
+      .subscribe(url => this.data.photo = url);
   }
   
 }

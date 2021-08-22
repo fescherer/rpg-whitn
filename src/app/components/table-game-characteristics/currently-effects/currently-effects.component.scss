@@ -3,35 +3,6 @@
   width: 100%;
 }
 
-.character-photo{
-  display: flex;
-  width: 150px;
-  margin: 15px;
-
-  .img {
-    width: 150px;
-    height: 220px;
-    border: 2px solid var(--dark-primary-color);
-    border-radius: 5px;
-    object-fit: cover;
-    box-shadow: 5px 6px var(--shadow-color);
-  }
-  .no-img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: var(--dark-primary-color);
-    cursor: pointer;
-
-    span {
-      padding: 15px;
-      font-size: 20px;
-      text-align: center;
-    }
-  }
-}
-
 .effects-container {
   display: flex;
   flex-direction: column;

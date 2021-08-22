@@ -39,8 +39,7 @@ export interface apresentationInterface {
   name: string,
   motivation: string,
   age: string,
-  height: string,
-  weight: string,
+  photo: string,
 }
 
 export interface gameplayCharacteristicsInterface {
@@ -49,7 +48,6 @@ export interface gameplayCharacteristicsInterface {
 }
 
 export interface currentylEffectsInterface{
-  photo: string,
   effects: Array<effectInterface>,
   stats: Array<hex1Interface>;
 }

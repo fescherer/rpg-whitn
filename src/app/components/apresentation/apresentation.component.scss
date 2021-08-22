@@ -4,13 +4,37 @@
   flex-direction: column;
 }
 
-.age-height-weight-container {
+.character-photo{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px;
+  width: 150px;
+  margin: 15px;
 
-  .mat-form-field {
-    width: 31%;
+  .img {
+    width: 150px;
+    height: 220px;
+    border: 2px solid var(--dark-primary-color);
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 5px 6px var(--shadow-color);
   }
+  .no-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--dark-primary-color);
+    cursor: pointer;
+
+    span {
+      padding: 15px;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.wrapper-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
