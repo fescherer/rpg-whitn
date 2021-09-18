@@ -1,6 +1,8 @@
 <div 
   class="container hover-effect-translate hover-effect "
  (click)="this.data.state = !this.data.state;" 
- [ngClass]="[this.data.state ? this.data.color+'Activated' : '',this.data.color]"  >
+ [ngClass]="[this.data.state ? this.data.color+'Activated' : '',this.data.color]"
+ matTooltip="{{this.data.tooltip}}"
+ >
   <span>{{ this.data.title }}</span> 
 </div>

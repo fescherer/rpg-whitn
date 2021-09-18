@@ -9,15 +9,17 @@ export class PageService {
   id: string;
   
   effects = [
-    {state: false, color: 'yellow', title: 'Stunned'},
-    {state: false, color: 'orange', title: 'Damaged'},
-    {state: false, color: 'red', title: 'H. Damaged'},
-    {state: false, color: 'yellow', title: 'Weakened'},
-    {state: false, color: 'orange', title: 'Não sei'},
-    {state: false, color: 'red', title: 'Broken'},
-    {state: false, color: 'green', title: 'Weakened'},
-    {state: false, color: 'blue', title: 'string'},
-    {state: false, color: 'purple', title: 'Broken'},
+    {state: false, color: 'yellow', title: 'Stunned', tooltip: 'Você fica 1 rodada sem jogar'},
+    {state: false, color: 'orange', title: 'Bleeding', tooltip: 'Você perde 1 de vida a cada rodada'},
+    {state: false, color: 'orange', title: 'Damaged', tooltip: 'Seu movimento é reduzido pela metade'},
+    {state: false, color: 'red', title: 'Weakened', tooltip: 'Seus atributos são diminuidos pela metade'},
+    {state: false, color: 'red', title: 'Unconscious', tooltip: 'Você não tem ações disponíveis. Você precisa jogar um teste de constituição a cada rodada para acordar'},
+    {state: false, color: 'red', title: 'Broken', tooltip: 'Você está quase morrendo(Fisico ou mental). Você precisa fazer teste de poder a cada rodada para não morrer'},
+    {state: false, color: 'blue', title: 'string', tooltip: ''},
+    {state: false, color: 'purple', title: 'Broken', tooltip: ''},
+    {state: false, color: 'green', title: 'Weakened', tooltip: ''},
+    {state: false, color: 'blue', title: 'string', tooltip: ''},
+    {state: false, color: 'purple', title: 'Broken', tooltip: ''},
   ];
 
   stats: hex3Interface[] = [

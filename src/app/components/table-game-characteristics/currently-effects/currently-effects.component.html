@@ -1,7 +1,7 @@
 <div class="container">
   <div class="effects-container">
     <div class="effects">
-      <app-effects *ngFor="let effect of data.effects" [data]="effect"></app-effects>
+      <app-effects *ngFor="let effect of example" [data]="effect"></app-effects>
     </div>
     <div class="stats">
       <app-hex1 *ngFor="let i of data.stats" [data]="i"></app-hex1>

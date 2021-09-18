@@ -1,5 +1,6 @@
 .container{
   display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -9,15 +10,20 @@
 }
 
 .effects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 60%;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  // align-items: center;
+  // height: 60%;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr ; /* Create 2 columns and auto-place rows */
+  grid-column-gap: 1em;
+  grid-row-gap: 0.5em;
 }
 
 .stats {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0.6rem;
 }

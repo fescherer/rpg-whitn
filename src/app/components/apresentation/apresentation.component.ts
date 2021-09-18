@@ -26,18 +26,12 @@ export class ApresentationComponent implements OnInit {
       motivation: [''],
       age: ['', [Validators.required, Validators.pattern("[0-9]*\.?[0-9]*")]],
     })
-
-    this.apresentationForm.setValue({
-      name: this.data.name,
-      motivation: this.data.motivation,
-      age: this.data.age,
-    });
   }
 
   saveObject() {
+    this.data.name = this.apresentationForm.value.name;
+    this.data.motivation = this.apresentationForm.value.motivation;
     if(this.apresentationForm.valid){
-      this.data.name = this.apresentationForm.value.name;
-      this.data.motivation = this.apresentationForm.value.motivation;
       this.data.age = this.apresentationForm.value.age;
     }
   }
