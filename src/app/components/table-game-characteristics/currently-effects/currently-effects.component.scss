@@ -1,4 +1,4 @@
-.container{
+.container {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -17,7 +17,7 @@
   // height: 60%;
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr ; /* Create 2 columns and auto-place rows */
+  grid-template-columns: 1fr 1fr 1fr; /* Create 2 columns and auto-place rows */
   grid-column-gap: 1em;
   grid-row-gap: 0.5em;
 }

@@ -42,6 +42,6 @@
 }
 
 .text-area-style[contenteditable]:empty::before {
-  content: "Digite o que quiser aqui";
+  content: 'Digite o que quiser aqui';
   color: gray;
 }

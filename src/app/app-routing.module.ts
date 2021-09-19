@@ -6,11 +6,11 @@ import { HomeComponent } from './pages/home/home.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'page/:id', component: CaracterSheetComponent },
-  { path: '**',   redirectTo: '', pathMatch: 'full' },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

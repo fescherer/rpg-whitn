@@ -5,10 +5,14 @@
     <mat-card-subtitle>Se prepare para o combate</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <div style="display: flex;flex-direction: column;">
+    <div style="display: flex; flex-direction: column">
       <app-currently-effects [data]="data.gameplayCharacteristics.currentlyEffects"></app-currently-effects>
       <div class="stat-container">
-        <app-hex3 *ngFor="let i of data.gameplayCharacteristics.stats" [data]="i" [attributes]="data.attributes"></app-hex3>
+        <app-hex3
+          *ngFor="let i of data.gameplayCharacteristics.stats"
+          [data]="i"
+          [attributes]="data.attributes"
+        ></app-hex3>
       </div>
     </div>
   </mat-card-content>

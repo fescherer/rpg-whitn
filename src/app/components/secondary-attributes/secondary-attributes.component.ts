@@ -4,14 +4,12 @@ import { attributesInterface, characterSheetDataInterface } from 'src/app/interf
 @Component({
   selector: 'app-secondary-attributes',
   templateUrl: './secondary-attributes.component.html',
-  styleUrls: ['./secondary-attributes.component.scss']
+  styleUrls: ['./secondary-attributes.component.scss'],
 })
 export class SecondaryAttributesComponent implements OnInit {
   @Input() data: characterSheetDataInterface;
   @Input() attributes: attributesInterface;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

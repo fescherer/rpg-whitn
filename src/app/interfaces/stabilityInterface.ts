@@ -1,5 +1,5 @@
 export interface effectTypeInterface {
-  title: string,
-  duration: string,
-  relatedTo: string
+  title: string;
+  duration: string;
+  relatedTo: string;
 }

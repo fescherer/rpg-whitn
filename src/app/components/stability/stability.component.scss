@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   gap: 0.8rem;
-
 }
 
 .title {
@@ -46,12 +45,12 @@
   }
 }
 
-.list-item{
+.list-item {
   text-overflow: ellipsis;
   overflow: hidden;
-  max-width: 15rem; 
+  max-width: 15rem;
   white-space: nowrap;
-  display:inline-block;
+  display: inline-block;
 }
 
 .stability-sources {
@@ -67,4 +66,3 @@
   gap: 0.2rem;
   width: 50%;
 }
-  

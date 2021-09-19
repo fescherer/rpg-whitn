@@ -8,31 +8,32 @@ import { ListSourcesDialogComponent } from '../list-sources-dialog/list-sources-
 @Component({
   selector: 'app-stability',
   templateUrl: './stability.component.html',
-  styleUrls: ['./stability.component.scss']
+  styleUrls: ['./stability.component.scss'],
 })
 export class StabilityComponent implements OnInit {
   @Input() data;
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog) {}
   stabilitySourceDialogRef: MatDialogRef<ListSourcesDialogComponent>;
   stabilityEffectDialogRef: MatDialogRef<ListEffectsDialogComponent>;
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   addStabilitySource(): void {
     this.stabilitySourceDialogRef = this.dialog.open(ListSourcesDialogComponent);
-    this.stabilitySourceDialogRef.afterClosed()
-      .pipe(filter(newValue => newValue))
-      .subscribe(newValue => {
+    this.stabilitySourceDialogRef
+      .afterClosed()
+      .pipe(filter((newValue) => newValue))
+      .subscribe((newValue) => {
         this.data.stabilitySources.push(newValue);
       });
   }
 
   addStabilityEffect(): void {
     this.stabilityEffectDialogRef = this.dialog.open(ListEffectsDialogComponent);
-    this.stabilityEffectDialogRef.afterClosed()
-      .pipe(filter(newValue => newValue))
-      .subscribe(newValue => {
+    this.stabilityEffectDialogRef
+      .afterClosed()
+      .pipe(filter((newValue) => newValue))
+      .subscribe((newValue) => {
         this.data.stabilityEffects.push(`${newValue.title} de ${newValue.relatedTo} ${newValue.duration}`);
       });
   }
@@ -50,5 +51,4 @@ export class StabilityComponent implements OnInit {
       this.data.stabilityEffects.splice(index, 1);
     }
   }
-
 }

@@ -5,16 +5,12 @@ import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'app-url-dialog',
   templateUrl: './url-dialog.component.html',
-  styleUrls: ['./url-dialog.component.scss']
+  styleUrls: ['./url-dialog.component.scss'],
 })
 export class UrlDialogComponent implements OnInit {
+  form: FormGroup;
 
-  form : FormGroup;
-
-  constructor(
-    private formBuilder: FormBuilder,
-    private dialogRef: MatDialogRef<UrlDialogComponent>
-  ) { }
+  constructor(private formBuilder: FormBuilder, private dialogRef: MatDialogRef<UrlDialogComponent>) {}
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -22,7 +18,7 @@ export class UrlDialogComponent implements OnInit {
     });
   }
 
-  submitUrl(form: FormGroup): void{
+  submitUrl(form: FormGroup): void {
     this.dialogRef.close(`${form.value.url}`);
   }
 }

@@ -1,6 +1,6 @@
-import { characterSheetDataInterface } from "./characterSheetDataInterface";
+import { characterSheetDataInterface } from './characterSheetDataInterface';
 
 export interface fireStoreDataInterface {
-  id: string,
-  data: characterSheetDataInterface,
+  id: string;
+  data: characterSheetDataInterface;
 }

@@ -8,9 +8,8 @@ describe('UrlDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UrlDialogComponent ]
-    })
-    .compileComponents();
+      declarations: [UrlDialogComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

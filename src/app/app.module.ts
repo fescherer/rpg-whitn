@@ -68,9 +68,9 @@ import { WeaponDialogComponent } from './components/weapons/weapon-dialog/weapon
     MaterialModule,
     ReactiveFormsModule,
     AngularFirestoreModule,
-    AngularFireModule.initializeApp(environment.config)
+    AngularFireModule.initializeApp(environment.config),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

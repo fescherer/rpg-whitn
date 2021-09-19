@@ -6,17 +6,19 @@
   </mat-card-header>
   <mat-card-content>
     <div class="container">
-
       <div class="annotations shadow-effect hover-effect-translate">
         <div class="title">Anotações</div>
-        <textarea class="text-area-style" placeholder="Suas anotações" [(ngModel)]="data.annotations">{{ data.annotations }}</textarea>
+        <textarea class="text-area-style" placeholder="Suas anotações" [(ngModel)]="data.annotations">{{
+          data.annotations
+        }}</textarea>
       </div>
 
       <div class="history shadow-effect hover-effect-translate">
         <div class="title">História</div>
-        <textarea class="text-area-style" placeholder="Sua história" [(ngModel)]="data.history">{{ data.history }}</textarea>
+        <textarea class="text-area-style" placeholder="Sua história" [(ngModel)]="data.history">{{
+          data.history
+        }}</textarea>
       </div>
-
     </div>
   </mat-card-content>
 </mat-card>

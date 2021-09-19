@@ -1,27 +1,26 @@
-import { hex1Interface, hex2Interface, hex3Interface, hex4Interface } from "./hexInterface";
-import { effectInterface } from "./effect";
-import { effectTypeInterface } from "./stabilityInterface";
-import { weaponInterface } from "./weaponInterface";
+import { hex1Interface, hex2Interface, hex3Interface, hex4Interface } from './hexInterface';
+import { effectInterface } from './effect';
+import { effectTypeInterface } from './stabilityInterface';
+import { weaponInterface } from './weaponInterface';
 
 export interface characterSheetDataInterface {
-  apresentation: apresentationInterface,
+  apresentation: apresentationInterface;
   gameplayCharacteristics: gameplayCharacteristicsInterface;
-  attributes: attributesInterface,
-  specialAttributes: Array<hex3Interface>,
-  secondaryAttributes: Array<hex4Interface>,
+  attributes: attributesInterface;
+  specialAttributes: Array<hex3Interface>;
+  secondaryAttributes: Array<hex4Interface>;
   stability: {
-    stabilitySources: Array<string>,
-    stabilityEffects: Array<effectTypeInterface>
-  },
-  weapons: Array<weaponInterface>,
+    stabilitySources: Array<string>;
+    stabilityEffects: Array<effectTypeInterface>;
+  };
+  weapons: Array<weaponInterface>;
   inventory: {
-    inventory: string,
-  },
+    inventory: string;
+  };
   textAreas: {
-    annotations: string,
-    history: string
-  }
-
+    annotations: string;
+    history: string;
+  };
 }
 
 export interface attributesInterface {
@@ -32,14 +31,14 @@ export interface attributesInterface {
   INT: hex2Interface;
   SAB: hex2Interface;
   CAR: hex2Interface;
-  POD: hex2Interface; 
+  POD: hex2Interface;
 }
 
 export interface apresentationInterface {
-  name: string,
-  motivation: string,
-  age: string,
-  photo: string,
+  name: string;
+  motivation: string;
+  age: string;
+  photo: string;
 }
 
 export interface gameplayCharacteristicsInterface {
@@ -47,7 +46,7 @@ export interface gameplayCharacteristicsInterface {
   stats: Array<hex3Interface>;
 }
 
-export interface currentylEffectsInterface{
-  effects: Array<effectInterface>,
+export interface currentylEffectsInterface {
+  effects: Array<effectInterface>;
   stats: Array<hex1Interface>;
 }

@@ -8,23 +8,22 @@ import { WeaponDialogComponent } from './weapon-dialog/weapon-dialog.component';
 @Component({
   selector: 'app-weapons',
   templateUrl: './weapons.component.html',
-  styleUrls: ['./weapons.component.scss']
+  styleUrls: ['./weapons.component.scss'],
 })
 export class WeaponsComponent implements OnInit {
   @Input() data: Array<weaponInterface>;
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog) {}
   hexDialogRef: MatDialogRef<WeaponDialogComponent>;
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
 
-  }
-  
   openWeaponDialog(): void {
-    this.hexDialogRef = this.dialog.open(WeaponDialogComponent, {data: {title: '', label: 'modificador'}});
-    this.hexDialogRef.afterClosed()
-      .pipe(filter(data => data))
-      .subscribe(data => {
+    this.hexDialogRef = this.dialog.open(WeaponDialogComponent, { data: { title: '', label: 'modificador' } });
+    this.hexDialogRef
+      .afterClosed()
+      .pipe(filter((data) => data))
+      .subscribe((data) => {
         this.data.push(data);
       });
   }

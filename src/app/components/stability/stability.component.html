@@ -6,17 +6,13 @@
   </mat-card-header>
   <mat-card-content>
     <div class="container">
-
       <div class="stability-sources shadow-effect hover-effect-translate">
         <div class="title">
           Fontes de estabilidade
           <mat-icon class="add-button hover-effect" (click)="addStabilitySource()" color="primary">add_circle</mat-icon>
         </div>
         <ul class="list">
-          <li 
-            class="hover-effect"
-            *ngFor="let source of data.stabilitySources"
-          >
+          <li class="hover-effect" *ngFor="let source of data.stabilitySources">
             {{ source }}<mat-icon color="warn" (click)="removeSource(source)">remove_circle</mat-icon>
           </li>
         </ul>
@@ -28,15 +24,11 @@
           <mat-icon class="add-button hover-effect" (click)="addStabilityEffect()" color="primary">add_circle</mat-icon>
         </div>
         <ul class="list">
-          <li 
-            class="hover-effect"
-            *ngFor="let effect of data.stabilityEffects"
-          >
+          <li class="hover-effect" *ngFor="let effect of data.stabilityEffects">
             {{ effect }}<mat-icon color="warn" (click)="removeEffect(effect)">remove_circle</mat-icon>
           </li>
         </ul>
       </div>
-
     </div>
   </mat-card-content>
 </mat-card>

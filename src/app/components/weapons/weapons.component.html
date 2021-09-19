@@ -6,10 +6,14 @@
   </mat-card-header>
   <mat-card-content class="wraper">
     <div *ngFor="let weapon of this.data" class="shadow-effect container">
-      <div class="removeWeapon"><mat-icon color="warn" class="hover-effect" (click)="removeWeapon(weapon)">remove_circle</mat-icon></div>
+      <div class="removeWeapon">
+        <mat-icon color="warn" class="hover-effect" (click)="removeWeapon(weapon)">remove_circle</mat-icon>
+      </div>
       <div class="title">
-        <div *ngIf="weapon.imageUrl!=''"><img matCardAvatar alt="sem imagem" [src]="weapon.imageUrl"></div>
-        <span class="title-text">{{ weapon.title }}<span class="subtitle">{{ weapon.description }}</span></span>
+        <div *ngIf="weapon.imageUrl != ''"><img matCardAvatar alt="sem imagem" [src]="weapon.imageUrl" /></div>
+        <span class="title-text"
+          >{{ weapon.title }}<span class="subtitle">{{ weapon.description }}</span></span
+        >
         <span>{{ weapon.class }}</span>
       </div>
       <div class="middle-container">
@@ -18,23 +22,23 @@
           <span>Dano: {{ weapon.damage }}</span>
           <span>Alcance: {{ weapon.range }}</span>
         </div>
-        <div class="bullet-container" *ngIf="weapon.rateOfFire!=0">
+        <div class="bullet-container" *ngIf="weapon.rateOfFire != 0">
           <span>Cadência:</span>
           <div class="bullet-container2">
-            <div 
-              *ngFor="let rate of weapon.rateOfFire;let indexOfelement=index;"
+            <div
+              *ngFor="let rate of weapon.rateOfFire; let indexOfelement = index"
               (click)="changeBulletState(indexOfelement, weapon)"
               class="bullet hover-effect-translate"
               [ngClass]="[rate ? 'bulletActivated' : '']"
-            >
-            </div>
+            ></div>
           </div>
         </div>
       </div>
-      
     </div>
   </mat-card-content>
-  <mat-card-actions align="end" style="display: flex; align-items: center; gap: 2rem;">
-    <span class="hover-effect hover-effect-translate button-add" (click)="openWeaponDialog()"><mat-icon color="primary">add_circle</mat-icon></span>
+  <mat-card-actions align="end" style="display: flex; align-items: center; gap: 2rem">
+    <span class="hover-effect hover-effect-translate button-add" (click)="openWeaponDialog()"
+      ><mat-icon color="primary">add_circle</mat-icon></span
+    >
   </mat-card-actions>
 </mat-card>

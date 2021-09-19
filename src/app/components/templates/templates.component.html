@@ -4,18 +4,18 @@
     <mat-card-title>Arquétipo</mat-card-title>
     <mat-card-subtitle>Você é o que deseja ser</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content>
-
-  </mat-card-content>
-  <mat-card-actions align="end" style="display: flex; align-items: center; gap: 2rem;">
+  <mat-card-content> </mat-card-content>
+  <mat-card-actions align="end" style="display: flex; align-items: center; gap: 2rem">
     <mat-form-field appearance="fill">
       <mat-label>Favorite food</mat-label>
       <mat-select>
         <mat-option *ngFor="let food of foods" [value]="food.value">
-          {{food.viewValue}}
+          {{ food.viewValue }}
         </mat-option>
       </mat-select>
     </mat-form-field>
-    <span class="hover-effect hover-effect-translate button-add" (click)="createTemplate()"><mat-icon color="primary">add_circle</mat-icon></span>
+    <span class="hover-effect hover-effect-translate button-add" (click)="createTemplate()"
+      ><mat-icon color="primary">add_circle</mat-icon></span
+    >
   </mat-card-actions>
 </mat-card>

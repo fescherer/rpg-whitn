@@ -8,9 +8,8 @@ describe('SecondaryAttributesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SecondaryAttributesComponent ]
-    })
-    .compileComponents();
+      declarations: [SecondaryAttributesComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

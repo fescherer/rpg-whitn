@@ -4,14 +4,12 @@ import { effectInterface } from 'src/app/interfaces/effect';
 @Component({
   selector: 'app-effects',
   templateUrl: './effects.component.html',
-  styleUrls: ['./effects.component.scss']
+  styleUrls: ['./effects.component.scss'],
 })
 export class EffectsComponent implements OnInit {
   @Input() data: effectInterface;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

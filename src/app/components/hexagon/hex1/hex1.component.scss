@@ -1,6 +1,6 @@
 .hexagon {
   position: relative;
-  width: 80px; 
+  width: 80px;
   height: 46.19px;
   background-color: var(--dark-primary-color);
   margin: 23.09px 0;
@@ -9,7 +9,7 @@
 
 .hexagon:before,
 .hexagon:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   width: 56.57px;
@@ -33,10 +33,10 @@
 .hexagon span {
   display: block;
   position: absolute;
-  top:0px;
+  top: 0px;
   left: 0;
-  width:80px;
-  height:46.1880px;
+  width: 80px;
+  height: 46.188px;
   z-index: 2;
   background: inherit;
 }

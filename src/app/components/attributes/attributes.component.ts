@@ -4,14 +4,12 @@ import { characterSheetDataInterface } from 'src/app/interfaces/characterSheetDa
 @Component({
   selector: 'app-attributes',
   templateUrl: './attributes.component.html',
-  styleUrls: ['./attributes.component.scss']
+  styleUrls: ['./attributes.component.scss'],
 })
 export class AttributesComponent implements OnInit {
   @Input() data: characterSheetDataInterface;
-  
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+  constructor() {}
 
+  ngOnInit(): void {}
 }

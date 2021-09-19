@@ -8,9 +8,8 @@ describe('WeaponDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WeaponDialogComponent ]
-    })
-    .compileComponents();
+      declarations: [WeaponDialogComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

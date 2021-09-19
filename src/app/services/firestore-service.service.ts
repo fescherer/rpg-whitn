@@ -6,44 +6,58 @@ import { SnackBarService } from './snack-bar.service';
 import { map } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FirestoreServiceService {
-
-  constructor(
-    private angularFire: AngularFirestore,
-    private snackBar: SnackBarService
-    ) { }
+  constructor(private angularFire: AngularFirestore, private snackBar: SnackBarService) {}
 
   createCharacterSheet(data: pageInterface) {
     return new Promise<pageInterface>((resolve, reject) => {
-      this.angularFire.collection("page").doc(data.id).set(data).then(
-        (res) => {this.snackBar.showSuccessSnackBar("Ficha criada")},
-        (err) => {rejects(err); this.snackBar.showErrorSnackBar("Erro na criação da ficha")}
-        )
-    })
+      this.angularFire
+        .collection('page')
+        .doc(data.id)
+        .set(data)
+        .then(
+          (res) => {
+            this.snackBar.showSuccessSnackBar('Ficha criada');
+          },
+          (err) => {
+            rejects(err);
+            this.snackBar.showErrorSnackBar('Erro na criação da ficha');
+          }
+        );
+    });
   }
 
   updateCharacterSheet(page: pageInterface) {
-    this.angularFire.collection("page").doc(`${page.id}`).update(page).then(
-      (res) => {this.snackBar.showSuccessSnackBar("A ficha foi atualizada")},
-      (err) => {rejects(err); this.snackBar.showErrorSnackBar("A ficha não foi atualizada")}
-      )
+    this.angularFire
+      .collection('page')
+      .doc(`${page.id}`)
+      .update(page)
+      .then(
+        (res) => {
+          this.snackBar.showSuccessSnackBar('A ficha foi atualizada');
+        },
+        (err) => {
+          rejects(err);
+          this.snackBar.showErrorSnackBar('A ficha não foi atualizada');
+        }
+      );
   }
 
-  deleteCharacterSheet() {
-
-  }
+  deleteCharacterSheet() {}
 
   getCharacterSheetList() {
-    return this.angularFire.collection("page").snapshotChanges().pipe(map(
-      changes => {
-        return changes.map(a => {
-          const data = a.payload.doc.data() as pageInterface;
-          return data;
+    return this.angularFire
+      .collection('page')
+      .snapshotChanges()
+      .pipe(
+        map((changes) => {
+          return changes.map((a) => {
+            const data = a.payload.doc.data() as pageInterface;
+            return data;
+          });
         })
-      }
-    ));
+      );
   }
-
 }

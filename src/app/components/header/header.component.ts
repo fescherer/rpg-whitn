@@ -5,18 +5,15 @@ import { FirestoreServiceService } from 'src/app/services/firestore-service.serv
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
   @Input() roomId: string;
   @Input() data: pageInterface;
-  
-  constructor(
-    private fireStoreService: FirestoreServiceService,
-    ) { }
 
-  ngOnInit(): void {
-  }
+  constructor(private fireStoreService: FirestoreServiceService) {}
+
+  ngOnInit(): void {}
 
   updateData() {
     this.fireStoreService.updateCharacterSheet(this.data);
@@ -25,5 +22,4 @@ export class HeaderComponent implements OnInit {
   refreshPage() {
     window.location.reload();
   }
-  
 }

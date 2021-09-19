@@ -8,8 +8,6 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
-
-
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
@@ -21,13 +19,15 @@ $whitn-warn: mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$whitn-theme: mat-light-theme((
-  color: (
-    primary: $whitn-primary,
-    accent: $whitn-accent,
-    warn: $whitn-warn,
+$whitn-theme: mat-light-theme(
+  (
+    color: (
+      primary: $whitn-primary,
+      accent: $whitn-accent,
+      warn: $whitn-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -36,23 +36,33 @@ $whitn-theme: mat-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: "Special Elite", sans-serif; background-color: var(--backgorund-color);}
-* {font-family: "Special Elite", sans-serif; margin:0; padding:0;}
-
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Special Elite', sans-serif;
+  background-color: var(--backgorund-color);
+}
+* {
+  font-family: 'Special Elite', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
 body {
---dark-primary-color: #19064d;
---default-primary-color: #009688;
---light-primary-color: #d9ecec;
---text-primary-color: #FFFFFF;
---accent-color: #009688;
---primary-text-color:#212121;
---secondary-text-color: #757575;
---divider-color: #BDBDBD;
---backgorund-color: #f0f0f0;
---shadow-color: #888888;
---warn-primary-color: #f44336;
+  --dark-primary-color: #19064d;
+  --default-primary-color: #009688;
+  --light-primary-color: #d9ecec;
+  --text-primary-color: #ffffff;
+  --accent-color: #009688;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --divider-color: #bdbdbd;
+  --backgorund-color: #f0f0f0;
+  --shadow-color: #888888;
+  --warn-primary-color: #f44336;
 }
 
 .mat-card {
@@ -64,7 +74,7 @@ body {
 }
 
 .mat-card-header {
-  color: var(--dark-primary-color)
+  color: var(--dark-primary-color);
 }
 
 button {
@@ -99,7 +109,7 @@ button {
   background-color: var(--default-primary-color) !important;
   color: #eee !important;
   .mat-simple-snackbar-action {
-      color: #eee !important;
+    color: #eee !important;
   }
 }
 
@@ -107,6 +117,6 @@ button {
   background-color: var(--warn-primary-color) !important;
   color: #eee !important;
   .mat-simple-snackbar-action {
-      color: #eee !important;
+    color: #eee !important;
   }
 }

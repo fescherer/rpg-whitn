@@ -8,9 +8,8 @@ describe('HexDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HexDialogComponent ]
-    })
-    .compileComponents();
+      declarations: [HexDialogComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

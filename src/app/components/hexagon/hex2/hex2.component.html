@@ -1,11 +1,19 @@
 <div class="container hover-effect-translate">
-  <span class="title" matTooltip="{{data.description}}">{{ data.title }}</span>
+  <span class="title" matTooltip="{{ data.description }}">{{ data.title }}</span>
   <div class="content-wrapper">
-    <div class="hexagon"><span>
-      <div class="content ">
-        <div matTooltip="Essa é a terça parte de seu atributo">{{this.thirdValue}}</div>
-        <div class="hover-effect change-button" (click)="openDialog()" matTooltip="Sua quantidade total desse atributo" >{{ data.value }}</div>
-      </div>
-    </span></div>
+    <div class="hexagon">
+      <span>
+        <div class="content">
+          <div matTooltip="Essa é a terça parte de seu atributo">{{ this.thirdValue }}</div>
+          <div
+            class="hover-effect change-button"
+            (click)="openDialog()"
+            matTooltip="Sua quantidade total desse atributo"
+          >
+            {{ data.value }}
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </div>

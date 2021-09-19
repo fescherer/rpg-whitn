@@ -3,13 +3,11 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-inventory',
   templateUrl: './inventory.component.html',
-  styleUrls: ['./inventory.component.scss']
+  styleUrls: ['./inventory.component.scss'],
 })
 export class InventoryComponent implements OnInit {
   @Input() data;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

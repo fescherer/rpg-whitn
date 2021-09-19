@@ -8,9 +8,8 @@ describe('ListSourcesDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListSourcesDialogComponent ]
-    })
-    .compileComponents();
+      declarations: [ListSourcesDialogComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

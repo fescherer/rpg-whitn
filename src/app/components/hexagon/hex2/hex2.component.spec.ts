@@ -8,9 +8,8 @@ describe('Hex2Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Hex2Component ]
-    })
-    .compileComponents();
+      declarations: [Hex2Component],
+    }).compileComponents();
   });
 
   beforeEach(() => {
