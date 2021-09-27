@@ -2,28 +2,34 @@
 
 #Deploy::::  ng deploy --base-href=/rpg-whitn/ 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<div align=center>
+<a href="https://www.python.org">
+<img src="https://img.shields.io/badge/python-3.7-informational">
+</a>
+<a href="https://opensource.org/licenses/MIT">
+<img alt="APM" src="https://img.shields.io/apm/l/vim-mode">
+</a>
+</div>      
+      
+# Introduction 💡 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# About 📘
 
-## Build
+# Objetives 📋
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+> Create a character sheet for WHITN RPG
 
-## Running unit tests
+# How Works 👨‍🏫
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Run Locally 📂
 
-## Running end-to-end tests
+# Reference Material 📚
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Legal Informations 👩‍⚖️
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- The project is [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- You can fork and use as you want
+- I would appreciate if you put my name and the link to this repository
