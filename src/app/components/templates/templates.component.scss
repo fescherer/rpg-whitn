@@ -2,3 +2,66 @@
   cursor: pointer;
   user-select: none;
 }
+
+.container-card {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid red;
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 1000;
+      letter-spacing: 0.2rem;
+    }
+  }
+}
+
+.select-fallen-angel {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #333333;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.azazel {
+  filter: brightness(0.9);
+  box-shadow: 0 0 20px #ffff00;
+}
+
+.image-container {
+  display: flex;
+
+  img {
+    width: 187.5px;
+    height: 275px;
+    border: 2px solid var(--dark-primary-color);
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 5px 6px var(--shadow-color);
+  }
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+  .title {
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  .description {
+    line-height: 1.5;
+  }
+}

@@ -2,20 +2,44 @@
   <mat-card-header>
     <mat-icon mat-card-avatar>switch_account</mat-icon>
     <mat-card-title>Arquétipo</mat-card-title>
-    <mat-card-subtitle>Você é o que deseja ser</mat-card-subtitle>
+    <mat-card-subtitle>Seu anjo caído será sua espada e escudo</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content> </mat-card-content>
+  <mat-card-content>
+    <div class="container-card" [ngClass]="selectedOption">
+      <div class="header-container">
+        <select class="select-fallen-angel" [(ngModel)]="selectedOption" (change)="saveOption()">
+          <option value="default" disabled selected>Escolha uma opção</option>
+          <option *ngFor="let element of fallenAngelsList" [value]="element.value">
+            {{ element.displayName }}
+          </option>
+        </select>
+        <span>Class {{ stats.class }}</span>
+      </div>
+      <div class="card-content">
+        <div class="card-description">
+          <span class="title">{{ selectedFallenAngel?.displayName + ', ' || '' }}{{ selectedFallenAngel?.title }}</span>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, est aliquid molestias voluptas commodi qui
+            quis reiciendis a distinctio! Explicabo tenetur quos, exercitationem tempore aliquid corporis aliquam minus
+            necessitatibus culpa!</span
+          >
+          <ul>
+            <span>Powers</span>
+            <li>op</li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/54243095e4b07ee637a9f812/1617135050172-PKFS8WTG3O5XTNYK1VH3/Samyaza.jpg?format=500w"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
   <mat-card-actions align="end" style="display: flex; align-items: center; gap: 2rem">
-    <mat-form-field appearance="fill">
-      <mat-label>Favorite food</mat-label>
-      <mat-select>
-        <mat-option *ngFor="let food of foods" [value]="food.value">
-          {{ food.viewValue }}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <span class="hover-effect hover-effect-translate button-add" (click)="createTemplate()"
-      ><mat-icon color="primary">add_circle</mat-icon></span
-    >
+    <span class="hover-effect hover-effect-translate button-add" (click)="createTemplate()">
+      <mat-icon color="primary">add_circle</mat-icon>
+    </span>
   </mat-card-actions>
 </mat-card>
