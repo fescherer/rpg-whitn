@@ -1,27 +1,35 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { data } from './data';
+import { Component, Input, OnChanges } from '@angular/core';
+import { FallenAngelInterface } from 'src/app/interfaces/fallenAngelInterface';
+import { dataList } from './data';
 @Component({
   selector: 'app-templates',
   templateUrl: './templates.component.html',
   styleUrls: ['./templates.component.scss'],
 })
-export class TemplatesComponent implements OnInit {
+export class TemplatesComponent implements OnChanges {
+  @Input() data: { faId: number; class: number };
   selectedOption: string = 'default';
-  selectedFallenAngel;
-  fallenAngelsList = data;
-  stats = {
-    class: 'D',
-  };
+  fallenAngel: FallenAngelInterface;
+  fallenAngelsList = dataList;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnChanges() {
+    this.fallenAngel = this.fallenAngelsList[this.data.faId];
+  }
 
-  createTemplate() {}
-
-  saveOption() {
-    console.log(this.selectedOption);
-    this.selectedFallenAngel = this.fallenAngelsList.find((element) => element.value == this.selectedOption);
+  getClass(num: number): string {
+    switch (num) {
+      case 0:
+        return 'D';
+      case 1:
+        return 'C';
+      case 2:
+        return 'B';
+      case 3:
+        return 'A';
+      default:
+        return '';
+    }
   }
 }

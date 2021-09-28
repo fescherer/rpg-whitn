@@ -95,6 +95,10 @@ export class PageService {
       annotations: '',
       history: '',
     },
+    template: {
+      faId: -1,
+      class: 0,
+    },
   };
 
   defaultData = {

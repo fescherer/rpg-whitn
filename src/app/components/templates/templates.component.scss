@@ -24,19 +24,14 @@
   }
 }
 
-.select-fallen-angel {
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  color: #333333;
-  background-color: #eeeeee;
-  border: 1px solid #dddddd;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
 .azazel {
   filter: brightness(0.9);
   box-shadow: 0 0 20px #ffff00;
+}
+
+.samyaza {
+  filter: brightness(0.9);
+  box-shadow: 0 0 20px #fc5000;
 }
 
 .image-container {
@@ -64,4 +59,19 @@
   .description {
     line-height: 1.5;
   }
+}
+
+.powers-list {
+  list-style-type: hebrew;
+  padding-left: 1.5rem;
+
+  li {
+    padding: 0.2 0.5rem;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid gray;
 }

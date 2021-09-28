@@ -21,6 +21,10 @@ export interface characterSheetDataInterface {
     annotations: string;
     history: string;
   };
+  template: {
+    faId: number;
+    class: number;
+  };
 }
 
 export interface attributesInterface {

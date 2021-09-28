@@ -5,41 +5,24 @@
     <mat-card-subtitle>Seu anjo caído será sua espada e escudo</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <div class="container-card" [ngClass]="selectedOption">
+    <div class="container-card" [ngClass]="this.fallenAngel?.value">
       <div class="header-container">
-        <select class="select-fallen-angel" [(ngModel)]="selectedOption" (change)="saveOption()">
-          <option value="default" disabled selected>Escolha uma opção</option>
-          <option *ngFor="let element of fallenAngelsList" [value]="element.value">
-            {{ element.displayName }}
-          </option>
-        </select>
-        <span>Class {{ stats.class }}</span>
+        <span class="title">{{ this.fallenAngel?.displayName + ', ' || '' }}{{ this.fallenAngel?.title }}</span>
+        <span>Class {{ getClass(data?.class) }}</span>
       </div>
       <div class="card-content">
         <div class="card-description">
-          <span class="title">{{ selectedFallenAngel?.displayName + ', ' || '' }}{{ selectedFallenAngel?.title }}</span>
-          <span
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, est aliquid molestias voluptas commodi qui
-            quis reiciendis a distinctio! Explicabo tenetur quos, exercitationem tempore aliquid corporis aliquam minus
-            necessitatibus culpa!</span
-          >
-          <ul>
-            <span>Powers</span>
-            <li>op</li>
-          </ul>
+          <p>{{ this.fallenAngel?.description }}</p>
+          <div class="divider"></div>
+          <span><strong>Powers: </strong></span>
+          <ol class="powers-list">
+            <li *ngFor="let element of this.fallenAngel?.powers[this.data?.class]">{{ element }}</li>
+          </ol>
         </div>
         <div class="image-container">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/54243095e4b07ee637a9f812/1617135050172-PKFS8WTG3O5XTNYK1VH3/Samyaza.jpg?format=500w"
-            alt=""
-          />
+          <img [src]="this.fallenAngel?.image" [alt]="this.fallenAngel?.displayName" />
         </div>
       </div>
     </div>
   </mat-card-content>
-  <mat-card-actions align="end" style="display: flex; align-items: center; gap: 2rem">
-    <span class="hover-effect hover-effect-translate button-add" (click)="createTemplate()">
-      <mat-icon color="primary">add_circle</mat-icon>
-    </span>
-  </mat-card-actions>
 </mat-card>

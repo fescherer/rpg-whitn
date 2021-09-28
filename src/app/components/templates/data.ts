@@ -1,9 +1,18 @@
-export const data = [
+export const dataList = [
   {
+    id: 0,
     displayName: 'Samyaza',
     value: 'samyaza',
     title: 'Angel of Pride',
-    description: 'Samyaza é o líder dos Watchers. Foi o primeiro a receber seu nome',
+    description: 'Samyaza é o líder dos Watchers.\n Foi o primeiro a receber seu nome',
+    powers: [
+      ['Super velocidade 1', 'Super pulo 1'],
+      ['Super velocidade 2', 'Super pulo 2'],
+      ['Super velocidade 3', 'Super pulo 3'],
+      ['Super velocidade 4', 'Super pulo 4'],
+    ],
+    image:
+      'https://images.squarespace-cdn.com/content/v1/54243095e4b07ee637a9f812/1617135050172-PKFS8WTG3O5XTNYK1VH3/Samyaza.jpg?format=500w',
   },
   { displayName: 'Azazel', value: 'azazel' },
   { displayName: 'Kokabiel', value: 'kokabiel' },
