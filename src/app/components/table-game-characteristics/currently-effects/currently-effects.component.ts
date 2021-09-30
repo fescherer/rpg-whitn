@@ -1,9 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { filter } from 'rxjs/operators';
-import { characterSheetDataInterface, currentylEffectsInterface } from 'src/app/interfaces/characterSheetDataInterface';
-import { effectInterface } from 'src/app/interfaces/effect';
-import { UrlDialogComponent } from './url-dialog/url-dialog.component';
+import { currentylEffectsInterface } from 'src/app/interfaces/characterSheetDataInterface';
 
 @Component({
   selector: 'app-currently-effects',

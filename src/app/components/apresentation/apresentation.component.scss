@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
-  width: 100%;
   flex-direction: column;
+  min-width: 15rem;
 }
 
 .character-photo {
@@ -33,8 +33,14 @@
   }
 }
 
+.mat-form-field {
+  width: 100%;
+}
+
 .wrapper-one {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
