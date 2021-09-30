@@ -6,6 +6,7 @@
 .container-card {
   padding: 1rem;
   margin: 1rem;
+  filter: brightness(0.9);
   .card-content {
     display: flex;
     justify-content: space-between;
@@ -23,14 +24,46 @@
   }
 }
 
-.azazel {
-  filter: brightness(0.9);
-  box-shadow: 0 0 20px #ffff00;
+.samyaza {
+  //#ff3503
+  //cor->
+  box-shadow: 0 0 20px #412730;
 }
 
-.samyaza {
-  filter: brightness(0.9);
-  box-shadow: 0 0 20px #fc5000;
+.azazel {
+  box-shadow: 0 0 20px #34413a;
+}
+
+.suphlatus {
+  box-shadow: 0 0 20px #bfac71;
+}
+
+.baraqiel {
+  box-shadow: 0 0 20px #1f1513;
+}
+
+.af {
+  box-shadow: 0 0 20px #610709;
+}
+
+.penemue {
+  box-shadow: 0 0 20px #402337;
+}
+
+.bezaliel {
+  box-shadow: 0 0 20px #b2b986;
+}
+
+.chazaqiel {
+  box-shadow: 0 0 20px #3c332c;
+}
+
+.asbeel {
+  box-shadow: 0 0 20px #bb9a65;
+}
+
+.armaros {
+  box-shadow: 0 0 20px #a56371;
 }
 
 .image-container {
@@ -39,7 +72,6 @@
   img {
     width: 187.5px;
     height: 275px;
-    border: 2px solid var(--dark-primary-color);
     border-radius: 5px;
     object-fit: cover;
     box-shadow: 5px 6px var(--shadow-color);
