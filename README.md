@@ -1,5 +1,7 @@
 # Whitn
 
+Quase acabado
+
 #Deploy::::  ng deploy --base-href=/rpg-whitn/ 
 
 
