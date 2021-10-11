@@ -13,21 +13,22 @@
 }
 
 .main-container {
-  width: 95%;
+  width: 98%;
   display: flex;
+  gap: 0.2rem;
+  padding-top: 0.5rem;
   font-size: 16px;
+  margin: 0.3rem;
 }
 
 .left-container {
   display: flex;
   flex-direction: column;
-  padding: 15px;
   width: 40%;
 }
 
 .right-container {
   display: flex;
   flex-direction: column;
-  padding: 15px;
   width: 60%;
 }

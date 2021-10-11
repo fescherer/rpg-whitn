@@ -9,7 +9,6 @@ export class PageService {
   id: string;
 
   effects = [
-    { state: false, color: 'yellow', title: 'Stunned', tooltip: 'Você fica 1 rodada sem jogar' },
     {
       state: false,
       color: 'orange',

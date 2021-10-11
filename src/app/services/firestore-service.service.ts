@@ -45,7 +45,10 @@ export class FirestoreServiceService {
       );
   }
 
-  deleteCharacterSheet() {}
+  deleteCharacterSheet(data: pageInterface) {
+    this.angularFire.doc(`page/${data.id}`).delete();
+    this.snackBar.showSuccessSnackBar('Tchau ficha');
+  }
 
   getCharacterSheetList() {
     return this.angularFire
