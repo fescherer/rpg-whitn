@@ -1,0 +1,57 @@
+<div style="position: relative">
+  <button mat-button class="close-button" (click)="closeDialog()">X</button>
+  <mat-tab-group style="padding-top: 3rem">
+    <mat-tab label="Consequências">
+      <button mat-flat-button color="accent" style="margin: 1rem" (click)="openStabilityList()">
+        Lista de perca de estabilidade
+      </button>
+      <div class="vertical-container">
+        <span
+          >O jogador consegue ficar com estabilidade negativa, porém ele ficará completamente insano e a cada 2 pontos a
+          menos de estabilidade, ele desenvolverá outro debuff.</span
+        >
+        <ul>
+          <span style="font-size: 1rem">Estabilidade zerada</span>
+          <li>Traumas</li>
+          <li>Paranoias</li>
+          <li>Medo (Fobias)</li>
+          <li>Amnésia Seletiva</li>
+          <li>Obsessão</li>
+          <li>Mania</li>
+        </ul>
+        <ul>
+          <span style="font-size: 1rem">O tempo vai variar por um D4</span>
+          <li>Se tirar 1: 1 hora</li>
+          <li>Se tirar 2: 1 dia</li>
+          <li>Se tirar 3: Até o fim da sessão</li>
+          <li>Se tirar 4: Por toda a vida do personagem</li>
+        </ul>
+      </div>
+    </mat-tab>
+    <mat-tab label="Recuperar">
+      <div style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem">
+        <span style="font-size: 1.5rem">Fontes de estabilidade</span>
+        <span style="font-size: 1rem">O jogador pode escolher (POD/15) fontes de estabilidade</span>
+        <ul>
+          <span style="font-size: 1rem">Exemplos</span>
+          <li>Familiar</li>
+          <li>Amigo</li>
+          <li>Foto</li>
+          <li>Objeto pessoal</li>
+          <li>Presente de alguém importante</li>
+          <li>Lugar</li>
+          <li>Som</li>
+          <li>Gosto</li>
+        </ul>
+        <span style="text-align: center"
+          >Jogador com menos da metade da estabilidade máxima pode ser feito um teste de terapia por outros
+          jogadores</span
+        >
+        <span style="text-align: center"
+          >Sucesso-> +1D4 que recupera. Pode ser usado uma vez por dia. Desastre -> -1D4 de estabilidade. Extremo -> +4
+          + 1D2 de estabilidade.</span
+        >
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

@@ -4,6 +4,8 @@ import { pageInterface } from 'src/app/interfaces/pageInterface';
 import { FirestoreServiceService } from 'src/app/services/firestore-service.service';
 import { DialogWeaponsListComponent } from '../dialog-weapons-list/dialog-weapons-list.component';
 import { Router } from '@angular/router';
+import { DialogCombatRulesComponent } from '../dialog-combat-rules/dialog-combat-rules.component';
+import { DialogStabilityRulesComponent } from '../dialog-stability-rules/dialog-stability-rules.component';
 
 @Component({
   selector: 'app-header',
@@ -39,5 +41,13 @@ export class HeaderComponent implements OnInit {
 
   openDoc() {
     window.open('https://docs.google.com/document/d/17JUZTtCrKkhbilJFgvweVPz0vmLU3DFpIGaQem8sqBs', '_blank');
+  }
+
+  openCombatRules() {
+    this.dialog.open(DialogCombatRulesComponent, { panelClass: 'custom-class' });
+  }
+
+  openStabilityRules() {
+    this.dialog.open(DialogStabilityRulesComponent, { panelClass: 'custom-class' });
   }
 }

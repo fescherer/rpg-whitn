@@ -34,6 +34,8 @@ import { TemplatesComponent } from './components/templates/templates.component';
 import { WeaponDialogComponent } from './components/weapons/weapon-dialog/weapon-dialog.component';
 import { DialogWeaponsListComponent } from './components/dialog-weapons-list/dialog-weapons-list.component';
 import { WeaponTableComponent } from './components/dialog-weapons-list/weapon-table/weapon-table.component';
+import { DialogCombatRulesComponent } from './components/dialog-combat-rules/dialog-combat-rules.component';
+import { DialogStabilityRulesComponent } from './components/dialog-stability-rules/dialog-stability-rules.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,6 +64,8 @@ import { WeaponTableComponent } from './components/dialog-weapons-list/weapon-ta
     WeaponDialogComponent,
     DialogWeaponsListComponent,
     WeaponTableComponent,
+    DialogCombatRulesComponent,
+    DialogStabilityRulesComponent,
   ],
   imports: [
     BrowserModule,
