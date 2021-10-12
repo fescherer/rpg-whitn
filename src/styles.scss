@@ -120,3 +120,10 @@ button {
     color: #eee !important;
   }
 }
+
+.custom-class {
+  mat-dialog-container {
+    padding: 0;
+    border-radius: 10px;
+  }
+}

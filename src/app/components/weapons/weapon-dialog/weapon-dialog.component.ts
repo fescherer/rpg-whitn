@@ -31,7 +31,7 @@ export class WeaponDialogComponent implements OnInit {
     weaponType: '',
     description: '',
     damage: '',
-    range: '',
+    range: 'Curta',
     rateOfFire: [],
     imageUrl: '',
   };

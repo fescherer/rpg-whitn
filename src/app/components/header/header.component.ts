@@ -34,6 +34,10 @@ export class HeaderComponent implements OnInit {
   }
 
   openweaponsList() {
-    this.dialog.open(DialogWeaponsListComponent);
+    this.dialog.open(DialogWeaponsListComponent, { panelClass: 'custom-class' });
+  }
+
+  openDoc() {
+    window.open('https://docs.google.com/document/d/17JUZTtCrKkhbilJFgvweVPz0vmLU3DFpIGaQem8sqBs', '_blank');
   }
 }

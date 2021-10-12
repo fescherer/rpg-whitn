@@ -33,7 +33,7 @@ import { WeaponsComponent } from './components/weapons/weapons.component';
 import { TemplatesComponent } from './components/templates/templates.component';
 import { WeaponDialogComponent } from './components/weapons/weapon-dialog/weapon-dialog.component';
 import { DialogWeaponsListComponent } from './components/dialog-weapons-list/dialog-weapons-list.component';
-
+import { WeaponTableComponent } from './components/dialog-weapons-list/weapon-table/weapon-table.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,6 +61,7 @@ import { DialogWeaponsListComponent } from './components/dialog-weapons-list/dia
     TemplatesComponent,
     WeaponDialogComponent,
     DialogWeaponsListComponent,
+    WeaponTableComponent,
   ],
   imports: [
     BrowserModule,

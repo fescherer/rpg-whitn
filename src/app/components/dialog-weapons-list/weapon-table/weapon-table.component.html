@@ -1,0 +1,33 @@
+<table mat-table [dataSource]="data">
+  <ng-container matColumnDef="class">
+    <th mat-header-cell *matHeaderCellDef>Classe</th>
+    <td mat-cell *matCellDef="let element">{{ element?.class }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="damage">
+    <th mat-header-cell *matHeaderCellDef>Dano</th>
+    <td mat-cell *matCellDef="let element">{{ element?.damage }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="eg">
+    <th mat-header-cell *matHeaderCellDef>Exemplos</th>
+    <td mat-cell *matCellDef="let element">{{ element?.examples }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="distance">
+    <th mat-header-cell *matHeaderCellDef>Distância</th>
+    <td mat-cell *matCellDef="let element">{{ element?.range }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="fireRate">
+    <th mat-header-cell *matHeaderCellDef>Cadência</th>
+    <td mat-cell *matCellDef="let element">{{ element?.fireRate }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns" class="gray"></tr>
+  <tr
+    mat-row
+    *matRowDef="let row; columns: displayedColumns; index as index"
+    [ngClass]="index % 2 === 0 ? '' : 'gray'"
+  ></tr>
+</table>

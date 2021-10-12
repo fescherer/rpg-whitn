@@ -1,1 +1,42 @@
-<p>dialog-weapons-list works!</p>
+<div style="position: relative">
+  <button mat-button class="close-button" (click)="closeDialog()">X</button>
+  <mat-tab-group style="padding-top: 3rem">
+    <mat-tab label="Corpo a corpo fraca">
+      <app-weapon-table [data]="dataWeaponMeleeWeak"></app-weapon-table>
+    </mat-tab>
+    <mat-tab label="Corpo a corpo forte">
+      <app-weapon-table [data]="dataWeaponMeleeStrong"></app-weapon-table>
+    </mat-tab>
+    <mat-tab label="Arcos">
+      <div class="container">
+        <span class="bonus">Bônus: Arma à distância sem cadência</span>
+        <app-weapon-table [data]="weaponBow"></app-weapon-table>
+      </div>
+    </mat-tab>
+    <mat-tab label="Pistola">
+      <div class="container">
+        <span class="bonus">Bônus: Ganham vantagem se estiverem a uma distância menor que a máxima</span>
+        <app-weapon-table [data]="weaponPistol" [ranged]="true"></app-weapon-table>
+      </div>
+    </mat-tab>
+    <mat-tab label="Espingarda">
+      <div class="container">
+        <span class="bonus">Bônus: Dano alto, mas distância curta</span>
+        <app-weapon-table [data]="weaponShotgun" [ranged]="true"></app-weapon-table>
+      </div>
+    </mat-tab>
+    <mat-tab label="Fuzil">
+      <div class="container">
+        <span class="bonus">Bônus: Mira não concede a vantagem, mas dá um dano extra</span>
+        <span style="padding-left: 1rem">Legenda do dano: (dano sem mira / dano mirando )</span>
+        <app-weapon-table [data]="weaponRifle" [ranged]="true"></app-weapon-table>
+      </div>
+    </mat-tab>
+    <mat-tab label="Metralhadora">
+      <div class="container">
+        <span class="bonus">Bônus: Podem dar 2 tiros com desvantagem cada um</span>
+        <app-weapon-table [data]="weaponMachineGun" [ranged]="true"></app-weapon-table>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
