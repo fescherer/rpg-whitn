@@ -6,6 +6,7 @@ import { DialogWeaponsListComponent } from '../dialog-weapons-list/dialog-weapon
 import { Router } from '@angular/router';
 import { DialogCombatRulesComponent } from '../dialog-combat-rules/dialog-combat-rules.component';
 import { DialogStabilityRulesComponent } from '../dialog-stability-rules/dialog-stability-rules.component';
+import { DialogNotesComponent } from '../dialog-notes/dialog-notes.component';
 
 @Component({
   selector: 'app-header',
@@ -49,5 +50,9 @@ export class HeaderComponent implements OnInit {
 
   openStabilityRules() {
     this.dialog.open(DialogStabilityRulesComponent, { panelClass: 'custom-class' });
+  }
+
+  openNotes() {
+    this.dialog.open(DialogNotesComponent, { panelClass: 'custom-class' });
   }
 }
