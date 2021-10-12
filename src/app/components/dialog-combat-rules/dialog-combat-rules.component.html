@@ -1,3 +1,35 @@
 <div style="position: relative">
   <button mat-button class="close-button" (click)="closeDialog()">X</button>
+  <div style="padding: 3rem 1rem 1rem 1rem">
+    <p style="display: flex; flex-direction: column">
+      <span>Armas corpo a corpo: Teste de Força</span>
+      <span>Armas à distância: Teste de Destreza</span>
+    </p>
+
+    <p style="display: flex; flex-direction: column">
+      <span>Esquiva: TESTE DE DESTREZA</span>
+      <span>Contra ataque: TESTE DE FORÇA</span>
+      <span>DEFESA: TESTE DE CONSTITUIÇÃO</span>
+    </p>
+
+    <div style="display: flex; flex-direction: column">
+      <p style="display: flex; flex-direction: column">
+        <span>Defesa: </span>
+        <span>sucesso aumento de pontos de resistência em dobro</span>
+        <span>falha pontos de resistência diminuem na metade</span>
+      </p>
+
+      <p style="display: flex; flex-direction: column">
+        <span>Esquiva: </span>
+        <span>sucesso não toma dano</span>
+        <span>falha toma o dano normal, ignorando os pontos de resistência</span>
+      </p>
+
+      <p style="display: flex; flex-direction: column">
+        <span>Contra ataque: </span>
+        <span>Sucesso não toma dano e pode dar um ataque</span>
+        <span>falha toma o dano que ia tomar em dobro e sua resistência aumenta em dobro</span>
+      </p>
+    </div>
+  </div>
 </div>
