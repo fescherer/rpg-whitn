@@ -1,21 +1,52 @@
 <div style="position: relative">
   <button mat-button class="close-button" (click)="closeDialog()">X</button>
-  <div style="padding: 3rem 1rem 1rem 0rem;">
-    <ul>
-      <li>Tudo arredonda para baixo</li>
-      <li>CADA TURNO = 3 SEGUNDOS</li>
-      <li>Dados para teste: dois D10, sendo um a dezena)</li>
-      <li>Teste de compra: carisma</li>
-      <li>MUITO CURTO: 0 - 1 metro</li>
-      <li>CURTO: 1 - 5 metros</li>
-      <li>MÉDIO: 5 - 10 metros</li>
-      <li>LONGO: 10 - 30 metros</li>
-      <li>MUITO LONGO:  30 - 60 metros</li>
-      <li>Ataque grave = Ataque que tira mais da metade da vida máxima - deixa Lesionado</li>
-      
-    </ul>
+  <div style="padding: 3rem 1rem 1rem 0rem; display: flex">
+    <div class="flex-container-row">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="sm-title"> Geral </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ul>
+          <li>Tudo arredonda para baixo</li>
+          <li>CADA TURNO = 3 SEGUNDOS</li>
+          <li>Teste de compra: carisma</li>
+          <li>Medicina: Primeira hora +5 de vida + d4. Para cada hora a mais gasta no tratamento +3</li>
+        </ul>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="sm-title"> Distâncias </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ul>
+          <li>MUITO CURTO: 0 - 1 metro</li>
+          <li>CURTO: 1 - 5 metros</li>
+          <li>MÉDIO: 5 - 10 metros</li>
+          <li>LONGO: 10 - 30 metros</li>
+          <li>MUITO LONGO: 30 - 60 metros</li>
+        </ul>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="sm-title"> Testes </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ul>
+          <li>Dados para teste: dois D10, sendo um a dezena)</li>
+          <li>Teste normal -> Jogador precisa tirar menos que seu o valor máximo</li>
+          <li>Teste dificil -> Jogador precisa tirar menos que o valor da terça parte</li>
+          <li>Desastre -> tirar 100, 99, 98, 97, 96, 95</li>
+          <li>Extremo -> tirar 1, 2, 3, 4, 5</li>
+        </ul>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="sm-title"> Testes parte 2 </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ul>
+          <li>Forçar um teste: Pode jogar de novo, mas se errar, vai ter consequência maior</li>
+          <li>Vantagem: Jogador pode jogar novamente o dado de porcentagem e pegar o melhor valor</li>
+          <li>Desvantagem: Jogador precisa jogar novamente o dado de porcentagem e pegar o pior valor</li>
+        </ul>
+      </mat-expansion-panel>
+    </div>
   </div>
 </div>
-
-
-
