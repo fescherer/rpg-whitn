@@ -15,6 +15,7 @@ export class CaracterSheetComponent implements OnInit {
   listSheets: any;
   hasPage: boolean = false;
   savedData: pageInterface;
+  sheetId: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -44,6 +45,7 @@ export class CaracterSheetComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.route.params.subscribe((val) => (this.sheetId = val.id));
     this.getSheetList();
   }
 }

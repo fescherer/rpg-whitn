@@ -37,6 +37,7 @@ import { WeaponTableComponent } from './components/dialog-weapons-list/weapon-ta
 import { DialogCombatRulesComponent } from './components/dialog-combat-rules/dialog-combat-rules.component';
 import { DialogStabilityRulesComponent } from './components/dialog-stability-rules/dialog-stability-rules.component';
 import { DialogNotesComponent } from './components/dialog-notes/dialog-notes.component';
+import { KeeperHelpButtonsComponent } from './components/keeper-help-buttons/keeper-help-buttons.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,6 +69,7 @@ import { DialogNotesComponent } from './components/dialog-notes/dialog-notes.com
     DialogCombatRulesComponent,
     DialogStabilityRulesComponent,
     DialogNotesComponent,
+    KeeperHelpButtonsComponent,
   ],
   imports: [
     BrowserModule,
