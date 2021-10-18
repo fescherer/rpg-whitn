@@ -1,6 +1,6 @@
-export interface effectInterface {
+export interface effectInterface [
   state: boolean;
   title: string;
   color: string;
   tooltip: string;
-}
+]
