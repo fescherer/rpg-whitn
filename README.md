@@ -1,6 +1,6 @@
 # Whitn
 
-Quase acabado
+Quase acabadooo
 $ ng deploy --base-href="https://ofelipescherer.github.io/rpg-whitn/"  
 #Deploy::::  ng deploy --base-href=/rpg-whitn/ 
 
