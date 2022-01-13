@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { currentylEffectsInterface } from 'src/app/interfaces/characterSheetDataInterface';
 
 @Component({
@@ -6,9 +6,7 @@ import { currentylEffectsInterface } from 'src/app/interfaces/characterSheetData
   templateUrl: './currently-effects.component.html',
   styleUrls: ['./currently-effects.component.scss'],
 })
-export class CurrentlyEffectsComponent implements OnInit {
+export class CurrentlyEffectsComponent {
   @Input() data: currentylEffectsInterface;
   constructor() {}
-
-  ngOnInit(): void {}
 }

@@ -1,8 +1,8 @@
 <div
+  (click)="turn()"
   class="container hover-effect-translate hover-effect"
-  (click)="this.data.state = !this.data.state"
-  [ngClass]="[this.data.state ? this.data.color + 'Activated' : '', this.data.color]"
-  matTooltip="{{ this.data.tooltip }}"
+  [ngClass]="[this.state.state ? this.state.color + 'Activated' : '', this.state.color]"
+  [matTooltip]="this.state.tooltip"
 >
-  <span>{{ this.data.title }}</span>
+  <span>{{ this.state.title }}</span>
 </div>

@@ -8,64 +8,6 @@ import { hex3Interface } from '../interfaces/hexInterface';
 export class PageService {
   id: string;
 
-  effects = [
-    {
-      state: false,
-      color: 'orange',
-      title: 'Bleeding',
-      tooltip: 'Cuidado para não pegar uma infecção. Você perde 1 de vida a cada rodada',
-    },
-    {
-      state: false,
-      color: 'orange',
-      title: 'Damaged',
-      tooltip: 'Seu machucado está atrapalhando. Seu movimento é reduzido pela metade',
-    },
-    {
-      state: false,
-      color: 'red',
-      title: 'Frightened',
-      tooltip: 'Você está aterrorizado. Seu poder é diminuido pela metade',
-    },
-    {
-      state: false,
-      color: 'red',
-      title: 'Weakened',
-      tooltip: 'Você não está no seu melhor momento. Seus atributos são diminuidos pela metade',
-    },
-    {
-      state: false,
-      color: 'red',
-      title: 'Unconscious',
-      tooltip: 'Você não tem ações disponíveis. Você precisa jogar um teste de constituição a cada rodada para acordar',
-    },
-    {
-      state: false,
-      color: 'red',
-      title: 'Broken',
-      tooltip:
-        'Você está quase morrendo(Fisico ou mental). Você precisa fazer teste de poder a cada rodada para não morrer',
-    },
-    {
-      state: false,
-      color: 'blue',
-      title: 'Frenzy',
-      tooltip: 'Algo está estranho, você se sente mais forte. Seu poder é aumentado em 25%. E inciativa tem prioridade',
-    },
-    {
-      state: false,
-      color: 'blue',
-      title: 'Adrenaline',
-      tooltip:
-        'Algo está estranho, você se sente mais confiante. Sua destreza é aumentadA em 25%. E seu movimento é aumentado em 3',
-    },
-    { state: false, color: 'blue', title: 'string', tooltip: '' },
-    { state: false, color: 'purple', title: 'Broken', tooltip: '' },
-    { state: false, color: 'green', title: 'Weakened', tooltip: '' },
-    { state: false, color: 'blue', title: 'string', tooltip: '' },
-    { state: false, color: 'purple', title: 'Broken', tooltip: '' },
-  ];
-
   stats: hex3Interface[] = [
     { type: 'life', title: 'Vida', description: '', rightNumber: 0, result: 0 },
     { type: 'stability', title: 'Estabilidade', description: '', rightNumber: 0, result: 0 },
@@ -82,7 +24,72 @@ export class PageService {
     },
     gameplayCharacteristics: {
       currentlyEffects: {
-        effects: this.effects,
+        effects: [
+          {
+            state: false,
+            color: 'orange',
+            title: 'Bleeding',
+            tooltip: 'Cuidado para não pegar uma infecção. Você perde 1 de vida a cada rodada',
+          },
+          {
+            state: false,
+            color: 'orange',
+            title: 'Damaged',
+            tooltip: 'Seu machucado está atrapalhando. Seu movimento é reduzido pela metade',
+          },
+          {
+            state: false,
+            color: 'red',
+            title: 'Frightened',
+            tooltip: 'Você está aterrorizado. Seu poder é diminuido pela metade',
+          },
+          {
+            state: false,
+            color: 'red',
+            title: 'Weakened',
+            tooltip: 'Você não está no seu melhor momento. Seus atributos são diminuidos pela metade',
+          },
+          {
+            state: false,
+            color: 'red',
+            title: 'Unconscious',
+            tooltip:
+              'Você não tem ações disponíveis. Você precisa jogar um teste de constituição a cada rodada para acordar',
+          },
+          {
+            state: false,
+            color: 'red',
+            title: 'Broken',
+            tooltip:
+              'Você está quase morrendo(Fisico ou mental). Você precisa fazer teste de poder a cada rodada para não morrer',
+          },
+          {
+            state: false,
+            color: 'blue',
+            title: 'Frenzy',
+            tooltip:
+              'Algo está estranho, você se sente mais forte. Seu poder é aumentado em 25%. E inciativa tem prioridade',
+          },
+          {
+            state: false,
+            color: 'blue',
+            title: 'Adrenaline',
+            tooltip:
+              'Algo está estranho, você se sente mais confiante. Sua destreza é aumentadA em 25%. E seu movimento é aumentado em 3',
+          },
+          {
+            state: false,
+            color: 'purple',
+            title: 'Lucky',
+            tooltip: 'Você está com sorte. As 4 próximas jogadas de dado serão com vantagem',
+          },
+          {
+            state: false,
+            color: 'purple',
+            title: 'Watchful',
+            tooltip: 'Você está em seu atento. Você tem mais chances de encontrar coisas',
+          },
+        ],
         stats: [
           { title: 'Vida atual', description: '', value: 0 },
           { title: 'Estabilidade atual', description: '', value: 0 },

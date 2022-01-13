@@ -1,5 +1,4 @@
 import { hex1Interface, hex2Interface, hex3Interface, hex4Interface } from './hexInterface';
-import { effectInterface } from './effect';
 import { effectTypeInterface } from './stabilityInterface';
 import { weaponInterface } from './weaponInterface';
 
@@ -51,6 +50,6 @@ export interface gameplayCharacteristicsInterface {
 }
 
 export interface currentylEffectsInterface {
-  effects: Array<effectInterface>;
+  effects: Array<any>;
   stats: Array<hex1Interface>;
 }
