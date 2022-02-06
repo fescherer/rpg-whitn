@@ -28,13 +28,11 @@ export class CaracterSheetComponent implements OnInit {
   }
 
   getSheetList() {
-    return this.firestoreService.getCharacterSheetList().subscribe((res) => {
-      res.forEach((element) => {
-        if (element.id == this.data.id) {
-          this.hasPage = true;
-          this.savedData = element;
-        }
-      });
+    this.firestoreService.getCharacterSheetList(this.data).subscribe((elem: pageInterface) => {
+      if (elem && elem.id == this.data.id) {
+        this.hasPage = true;
+        this.savedData = elem;
+      }
       if (!this.hasPage) {
         this.firestoreService.createCharacterSheet(this.data);
       } else {

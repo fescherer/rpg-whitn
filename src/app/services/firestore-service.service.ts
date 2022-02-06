@@ -50,17 +50,7 @@ export class FirestoreServiceService {
     this.snackBar.showSuccessSnackBar('Tchau ficha');
   }
 
-  getCharacterSheetList() {
-    return this.angularFire
-      .collection('page')
-      .snapshotChanges()
-      .pipe(
-        map((changes) => {
-          return changes.map((a) => {
-            const data = a.payload.doc.data() as pageInterface;
-            return data;
-          });
-        })
-      );
+  getCharacterSheetList(page?: pageInterface) {
+    return this.angularFire.collection('page').doc(`${page.id}`).valueChanges();
   }
 }
