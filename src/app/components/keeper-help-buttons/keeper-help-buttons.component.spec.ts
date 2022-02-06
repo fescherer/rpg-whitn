@@ -8,9 +8,8 @@ describe('KeeperHelpButtonsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ KeeperHelpButtonsComponent ]
-    })
-    .compileComponents();
+      declarations: [KeeperHelpButtonsComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

@@ -42,5 +42,5 @@ export const effects = [
       'Algo está estranho, você se sente mais confiante. Sua destreza é aumentadA em 25%. E seu movimento é aumentado em 3',
   },
   { color: 'purple', title: 'Lucky', tooltip: 'Você está com sorte. As 4 próximas jogadas de dado serão com vantagem' },
-  { color: 'purple', title: 'Watchful', tooltip: 'Você está em seu atento. Você tem mais chances de encontrar coisas' },
+  { color: 'purple', title: 'aaa', tooltip: 'Você está em seu atento. Você tem mais chances de encontrar coisas' },
 ];
