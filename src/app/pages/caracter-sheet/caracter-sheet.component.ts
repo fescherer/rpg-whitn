@@ -29,6 +29,7 @@ export class CaracterSheetComponent implements OnInit {
 
   getSheetList() {
     this.firestoreService.getCharacterSheetList(this.data).subscribe((elem: pageInterface) => {
+      console.log(elem);
       if (elem && elem.id == this.data.id) {
         this.hasPage = true;
         this.savedData = elem;
