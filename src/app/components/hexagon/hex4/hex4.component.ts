@@ -62,8 +62,8 @@ export class Hex4Component implements OnInit {
         this.leftNumber = aux;
         this.calcResult();
         return aux;
-      case 'creatures':
-        aux = Math.round((attr.SAB.value + attr.CAR.value) / 2);
+      case 'bravery':
+        aux = Math.round((attr.SAB.value + attr.DES.value + attr.FOR.value) / 3);
         this.leftNumber = aux;
         this.calcResult();
         return aux;

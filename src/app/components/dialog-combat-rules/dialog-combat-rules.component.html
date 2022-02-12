@@ -1,40 +1,52 @@
 <div style="position: relative">
   <button mat-button class="close-button" (click)="closeDialog()">X</button>
   <div style="padding: 3rem 1rem 1rem 1rem">
-    <p style="display: flex; flex-direction: column">
-      <span>Armas corpo a corpo: Teste de Força</span>
-      <span>Armas à distância: Teste de Destreza</span>
+    <p class="container">
+      <span>O combate é feito em turnos que devem durar entre 6 a 10 segundos</span>
+      <span>Durante o turno o jogador tem a possibilidade de: </span>
+      <span>- Uma ação de movimento(Se deslocar proporcionalmente a situação e ao tempo do turno)</span>
+      <span>- Uma ação principal, podendo ser ataque ou não</span>
     </p>
 
-    <p style="display: flex; flex-direction: column">
-      <span>Esquiva: TESTE DE DESTREZA</span>
-      <span>Contra ataque: TESTE DE FORÇA</span>
-      <span>DEFESA: TESTE DE CONSTITUIÇÃO</span>
-    </p>
-
-    <div style="display: flex; flex-direction: column">
-      <p style="display: flex; flex-direction: column">
-        <span>Defesa: </span>
-        <span>sucesso aumento de pontos de resistência em dobro</span>
-        <span>falha pontos de resistência diminuem na metade</span>
+    <div class="container">
+      <p class="container">
+        <span>Ao receber um ataque, o jogador tem a possibilidade de esquivar ou contra-atacar</span>
+        <span>Porém só irá funcionar se o valor tirado for maior que o valor do atacante</span>
       </p>
 
-      <p style="display: flex; flex-direction: column">
+      <p class="container">
         <span>Esquiva: </span>
-        <span>sucesso não toma dano</span>
-        <span>falha toma o dano normal, ignorando os pontos de resistência</span>
+        <span>Critíco: Não toma dano</span>
+        <span>Sucesso: Toma metade do dano</span>
+        <span>Falha: Toma dano normal</span>
       </p>
 
-      <p style="display: flex; flex-direction: column">
+      <p class="container">
         <span>Contra ataque: </span>
-        <span>Sucesso não toma dano e pode dar um ataque</span>
-        <span>falha toma o dano que ia tomar em dobro e sua resistência aumenta em dobro</span>
+        <span>Critíco: Não toma dano e pode dar um ataque</span>
+        <span>Sucesso: Toma dano normal mas pode dar um ataque</span>
+        <span>Falha: Toma o dano normal + 1/3</span>
       </p>
 
-      <p style="display: flex; flex-direction: column">
+      <p class="container">
         <span>Ataque grave = Ataque que tira mais da metade da vida máxima</span>
-        <span>Fazer um teste de constituição para ver se fica inconciente</span>
+        <span>Ao estar com ataque grave deve ser feito um teste de constituição </span>
+        <span>a cada rodada até tirar critíco e acordar (com mínimo de 2 rodadas desacordado)</span>
+      </p>
+
+      <p class="container">
+        <span>Broken(Vida zerada ou até -3): Ao estar com esse efeito, o jogador deve ser tratado fora de combate</span>
+        <span>A cada rodada ele deve fazer um teste de Poder para ver se continua vivo</span>
       </p>
     </div>
+
+    <p class="container">
+      <span>Testes a serem feitos: </span>
+      <span>Iniciativa: Dado D12 + modificador</span>
+      <span>Armas corpo a corpo: Teste de Força</span>
+      <span>Armas à distância: Teste de Destreza</span>
+      <span>Esquiva: Teste de Atletismo</span>
+      <span>Contra Ataque: Teste de Bravura</span>
+    </p>
   </div>
 </div>

@@ -86,7 +86,7 @@ export class PageService {
           {
             state: false,
             color: 'purple',
-            title: 'Watchful',
+            title: 'Keen',
             tooltip: 'Você está em seu atento. Você tem mais chances de encontrar coisas',
           },
         ],
@@ -115,7 +115,7 @@ export class PageService {
       { type: 'athletics', title: 'Atletismo', description: '', modifier: 0, result: 0 },
       { type: 'perception', title: 'Percepção', description: '', modifier: 0, result: 0 },
       { type: 'intimidation', title: 'Intimidação', description: '', modifier: 0, result: 0 },
-      { type: 'creatures', title: 'Criaturas', description: '', modifier: 0, result: 0 },
+      { type: 'bravery', title: 'Bravura', description: '', modifier: 0, result: 0 },
       { type: 'medicine', title: 'Medicina', description: '', modifier: 0, result: 0 },
       { type: 'survivalist', title: 'Sobrevivência', description: '', modifier: 0, result: 0 },
       { type: 'furtivity', title: 'Furtividade', description: '', modifier: 0, result: 0 },
