@@ -9,7 +9,7 @@ import { dataList } from './data';
 export class TemplatesComponent implements OnChanges {
   @Input() data: { faId: number; class: number };
   selectedOption: string = 'default';
-  fallenAngel: FallenAngelInterface;
+  fallenAngel: any;
   fallenAngelsList = dataList;
 
   constructor() {}

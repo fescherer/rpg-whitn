@@ -2,7 +2,7 @@
   <mat-card-header>
     <mat-icon mat-card-avatar>switch_account</mat-icon>
     <mat-card-title>Arquétipo</mat-card-title>
-    <mat-card-subtitle>Seu anjo caído será sua espada e escudo</mat-card-subtitle>
+    <mat-card-subtitle>Seu anjo caído será sua espada, escudo e desespero</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <div class="container-card" [ngClass]="this.fallenAngel?.value">
@@ -12,11 +12,20 @@
       </div>
       <div class="card-content">
         <div class="card-description">
-          <p>{{ this.fallenAngel?.description }}</p>
+          <p class="break-line">{{ this.fallenAngel?.description }}</p>
           <div class="divider"></div>
           <span><strong>Powers: </strong></span>
           <ol class="powers-list">
-            <li *ngFor="let element of this.fallenAngel?.powers[this.data?.class]">{{ element }}</li>
+            <li *ngFor="let element of this.fallenAngel?.powers;let i = index">
+              <div *ngIf="i <= this.data?.class">
+                <h3>{{ element.title }}</h3>
+                <span></span>
+              </div>
+              <div *ngIf="i > this.data?.class">
+                soon
+              </div>
+            </li>
+            <!-- <li *ngFor="let element of this.fallenAngel?.powers">{{ element.title }}</li> -->
           </ol>
         </div>
         <div class="image-container">
