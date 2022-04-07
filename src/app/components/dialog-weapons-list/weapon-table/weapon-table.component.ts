@@ -6,18 +6,9 @@ import { weaponInterface } from 'src/app/interfaces/weaponInterface';
   templateUrl: './weapon-table.component.html',
   styleUrls: ['./weapon-table.component.scss'],
 })
-export class WeaponTableComponent implements OnInit {
+export class WeaponTableComponent {
   @Input() data: weaponInterface[];
-  @Input() ranged: boolean = false;
-  displayedColumns: string[];
+  displayedColumns: string[] = ['name', 'special', 'damage', 'aimed'];
 
   constructor() {}
-
-  ngOnInit(): void {
-    if (this.ranged) {
-      this.displayedColumns = ['class', 'damage', 'eg', 'distance', 'fireRate'];
-    } else {
-      this.displayedColumns = ['class', 'damage', 'eg', 'distance'];
-    }
-  }
 }

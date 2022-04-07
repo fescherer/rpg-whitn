@@ -4,10 +4,15 @@ export interface weaponInterface {
   title?: string;
   weaponType?: string;
   description?: string;
-  damage?: string;
   range?: 'Muito curta' | 'Curta' | 'Média' | 'Longa' | 'Muito longa';
   rateOfFire?: Array<boolean>;
   imageUrl?: string;
   examples?: string[];
   fireRate?: number;
+  aim?: string;
+
+  name?: string;
+  aimed?: string;
+  special?: string;
+  damage?: string;
 }
