@@ -16,16 +16,10 @@
           <div class="divider"></div>
           <span><strong>Powers: </strong></span>
           <ol class="powers-list">
-            <li *ngFor="let element of this.fallenAngel?.powers;let i = index">
-              <div *ngIf="i <= this.data?.class">
-                <h3>{{ element.title }}</h3>
-                <span></span>
-              </div>
-              <div *ngIf="i > this.data?.class">
-                soon
-              </div>
+            <li *ngFor="let element of [].constructor(this.data?.class);let i = index">
+              <span>{{fallenAngel?.powers[i].title}} (Custo: {{fallenAngel?.powers[i].cost}})</span><br>
+              <span>{{fallenAngel?.powers[i].desc}}</span>
             </li>
-            <!-- <li *ngFor="let element of this.fallenAngel?.powers">{{ element.title }}</li> -->
           </ol>
         </div>
         <div class="image-container">
