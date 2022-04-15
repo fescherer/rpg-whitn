@@ -20,18 +20,6 @@
         <div class="info">
           <span>Tipo: {{ weapon.weaponType }}</span>
           <span>Dano: {{ weapon.damage }}</span>
-          <span>Alcance: {{ weapon.range }}</span>
-        </div>
-        <div class="bullet-container" *ngIf="weapon.rateOfFire != 0">
-          <span>Cadência:</span>
-          <div class="bullet-container2">
-            <div
-              *ngFor="let rate of weapon.rateOfFire; let indexOfelement = index"
-              (click)="changeBulletState(indexOfelement, weapon)"
-              class="bullet hover-effect-translate"
-              [ngClass]="[rate ? 'bulletActivated' : '']"
-            ></div>
-          </div>
         </div>
       </div>
     </div>

@@ -1,10 +1,9 @@
 export interface weaponInterface {
-  type?: 'melee' | 'ranged';
+  type?: 'fast-melee' | 'slow-melee' | 'pistol' | 'rifle' | 'machine-gun';
   class?: 'A' | 'B' | 'C' | 'D';
   title?: string;
   weaponType?: string;
   description?: string;
-  range?: 'Muito curta' | 'Curta' | 'Média' | 'Longa' | 'Muito longa';
   rateOfFire?: Array<boolean>;
   imageUrl?: string;
   examples?: string[];

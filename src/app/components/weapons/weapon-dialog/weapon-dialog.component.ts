@@ -21,18 +21,20 @@ export class WeaponDialogComponent implements OnInit {
     'Arma grande',
     'Espada nobre',
   ];
-  weaponRangedTypes: Array<string> = ['Pistola', 'Espingarda', 'Fuzil', 'Metralhadora', 'Arco'];
-  ranges: Array<string> = ['Muito curta', 'Curta', 'Média', 'Longa', 'Muito longa'];
+
+  types = [
+    { name: 'Corpo a corpo lento', value: 'slow-melee' },
+    { name: 'Corpo a corpo rápido', value: 'fast-melee' },
+    { name: 'Pistola', value: 'pistol' },
+    { name: 'Rifle', value: 'rifle' },
+    { name: 'Metralhadora', value: 'machine-gun' },
+  ];
   classes: Array<string> = ['D', 'C', 'B', 'A'];
   weapon: weaponInterface = {
-    type: 'melee',
+    type: 'fast-melee',
     class: 'D',
     title: '',
-    weaponType: '',
     description: '',
-    damage: '',
-    range: 'Curta',
-    rateOfFire: [],
     imageUrl: '',
   };
 
@@ -46,10 +48,6 @@ export class WeaponDialogComponent implements OnInit {
     type: new FormControl('', [Validators.required]),
     description: new FormControl('', [Validators.required]),
     class: new FormControl('', [Validators.required]),
-    weaponType: new FormControl('', [Validators.required]),
-    damage: new FormControl('', [Validators.required]),
-    range: new FormControl('', [Validators.required]),
-    rateOfFire: new FormControl('', [Validators.required]),
     title: new FormControl('', [Validators.required]),
     imageUrl: new FormControl(''),
   });
@@ -61,12 +59,8 @@ export class WeaponDialogComponent implements OnInit {
       this.weapon.type = form.value.type;
       this.weapon.description = form.value.description;
       this.weapon.class = form.value.class;
-      this.weapon.weaponType = form.value.weaponType;
-      this.weapon.damage = form.value.damage;
-      this.weapon.range = form.value.range;
       this.weapon.imageUrl = form.value.imageUrl;
       this.weapon.title = form.value.title;
-      for (let i = 0; i < parseInt(form.value.rateOfFire); i++) this.weapon.rateOfFire.push(true);
       this.dialogRef.close(this.weapon);
     }
   }

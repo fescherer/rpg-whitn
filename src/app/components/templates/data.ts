@@ -87,7 +87,7 @@ export const dataList = [
     powers: [
       {
         title: 'Carga',
-        cost: 'D4 de estabilidade para cada D6 de dano, podendo no máximo 4D4',
+        cost: 'D4 de estabilidade para cada D4 de dano, podendo no máximo 4D4',
         desc: 'Baraqiel é insano, tudo que ele deseja é queimar tudo. Você pode trocar estabilidade por dano',
       },
       {
@@ -220,7 +220,7 @@ export const dataList = [
     powers: [
       {
         title: 'Escudo de areia',
-        cost: '8D2',
+        cost: '6D2',
         desc: 'Asbeel protegerá sua rainha a qualquer custo (Inclusive a estabilidade dela). Esse poder pode ser usado quando algum mostro atacar ela e bloqueia 100% do dano que seria sofrido.',
       },
       {
