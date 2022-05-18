@@ -5,7 +5,7 @@ $ ng deploy --base-href="https://ofelipescherer.github.io/rpg-whitn/"
 #Deploy::::  ng deploy --base-href=/rpg-whitn/ 
      
     
-
+ 
 <div align=center>
 <a href="https://www.python.org">
 <img src="https://img.shields.io/badge/python-3.7-informational">
