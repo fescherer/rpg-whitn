@@ -208,16 +208,16 @@ My name is Felipe Scherer and you can find me at:
 
 <!-- Badges and Badges Link -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/ofelipescherer/project-studies.svg?style=for-the-badge
-[contributors-url]: https://github.com/ofelipescherer/project-studies/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ofelipescherer/project-studies.svg?style=for-the-badge
-[forks-url]: https://github.com/ofelipescherer/project-studies/network/members
-[stars-shield]: https://img.shields.io/github/stars/ofelipescherer/project-studies.svg?style=for-the-badge
-[stars-url]: https://github.com/ofelipescherer/project-studies/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ofelipescherer/project-studies.svg?style=for-the-badge
-[issues-url]: https://github.com/ofelipescherer/project-studies/issues
-[license-shield]: https://img.shields.io/github/license/ofelipescherer/project-studies.svg?style=for-the-badge
-[license-url]: https://github.com/ofelipescherer/project-studies/blob/master/LICENSE.md
+[contributors-shield]: https://img.shields.io/github/contributors/ofelipescherer/rpg-whitn.svg?style=for-the-badge
+[contributors-url]: https://github.com/ofelipescherer/rpg-whitn/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ofelipescherer/rpg-whitn.svg?style=for-the-badge
+[forks-url]: https://github.com/ofelipescherer/rpg-whitn/network/members
+[stars-shield]: https://img.shields.io/github/stars/ofelipescherer/rpg-whitn.svg?style=for-the-badge
+[stars-url]: https://github.com/ofelipescherer/rpg-whitn/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ofelipescherer/rpg-whitn.svg?style=for-the-badge
+[issues-url]: https://github.com/ofelipescherer/rpg-whitn/issues
+[license-shield]: https://img.shields.io/github/license/ofelipescherer/rpg-whitn.svg?style=for-the-badge
+[license-url]: https://github.com/ofelipescherer/rpg-whitn/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0E76A8
 [linkedin-url]: https://www.linkedin.com/in/ofelipescherer
 [youtube-shield]: https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white
