@@ -101,10 +101,14 @@ To get this project up and running locally on your pc, follow the steps:
    npm install
    ```
 
-4. This project uses Firebase as database, so I cannot pass my firebase credentials. If you want to run locally you need to provide your own credentials. For this:
-   4.1. Create a google account;
-   4.2. Login at [firebase site](https://firebase.google.com);
-   4.3. Create a project and get your SDK credentials;
+3. This project uses Firebase as database, so I cannot pass my firebase credentials. If you want to run locally you need to provide your own credentials. For this:
+
+    3.1. Create a google account;
+
+    3.2. Login at [firebase site](https://firebase.google.com);
+
+    3.3. Create a project and get your SDK credentials;
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
