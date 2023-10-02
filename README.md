@@ -9,8 +9,8 @@
 [![MIT License][license-shield]][license-url]
 
   <br />
-  <a href="https://github.com/ofelipescherer/rpg-whitn">
-    <img src="https://github.com/ofelipescherer/rpg-whitn/assets/62115215/453c3d2c-0337-4baf-a705-da2b3ae72bbc" alt="Logo" width="80" height="80">
+  <a href="https://github.com/fescherer/rpg-whitn">
+    <img src="https://github.com/fescherer/rpg-whitn/assets/62115215/453c3d2c-0337-4baf-a705-da2b3ae72bbc" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">What Happened In That Night?</h3>
@@ -19,7 +19,7 @@
 
 A RPG caracter sheet for my RPG WHITN
 <br />
-<a href="https://github.com/ofelipescherer/rpg-whitn"><strong>Explore the docs »</strong></a>
+<a href="https://github.com/fescherer/rpg-whitn"><strong>Explore the docs »</strong></a>
 <br />
 <br />
 <a href="#about">About</a>
@@ -30,7 +30,11 @@ A RPG caracter sheet for my RPG WHITN
 •
 <a href="#usage">How to use</a>
 •
-<a href="#info">Info</a>
+<a href="#issue">Report Bug / Request Feature</a>
+•
+<a href="#contributing">Contributing</a>
+•
+<a href="#license">License</a>
 •
 <a href="#contact">Contact me</a>
 •
@@ -52,7 +56,7 @@ A good part of WHITN is using a fallen angel as weapon, likes JOJO's Stands. The
 
 [RPG Rules](/rules/rules.pdf)
 
-[Deploy](https://ofelipescherer.github.io/rpg-whitn)
+[Deploy](https://fescherer.github.io/rpg-whitn)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,7 +97,7 @@ To get this project up and running locally on your pc, follow the steps:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ofelipescherer/rpg-whitn.git
+   git clone https://github.com/fescherer/rpg-whitn.git
    ```
 
 2. Install NPM packages
@@ -151,37 +155,44 @@ To get this project up and running locally on your pc, follow the steps:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- **********************🐲Info🐲********************** -->
+<!-- **********************🐲Report Bug / Request Feature🐲********************** -->
+<a name="issue"></a>
 
-<a name="info"></a>
+## 🐞 Report Bug / Request Feature 🐞
 
-## :information_source: Info :information_source:
+If you found a bug or want to request a feature, you can open an [issue](https://github.com/fescherer/utils/blob/main/ISSUE.md)
 
-Don't forget to leave a star if you like the project ✨
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<div align="center">
 
-[![MIT License][license-shield]][license-url]
-[![How to contribute][info-contribute-shield]][info-contribute-url]
-[![Create an issue][info-issues-shield]][info-issues-url]
+<!-- **********************🐲Be part of this project🐲********************** -->
+<a name="contributing"></a>
 
-</div>
+## 👋 Be part of this project 👋
+
+Contributions are extremely welcome. You can see how to make one by following the file [Contributing](https://github.com/fescherer/utils/blob/main/CONTRIBUTING.md)
+
+And don't forget to leave a star on the project if you liked it 🤩
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- **********************🐲License🐲********************** -->
+<a name="license"></a>
+
+## ⚖️ License ⚖️
+
+Distributed under the MIT License. See [License](LICENSE) for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- **********************🐲Contact Me🐲********************** -->
-
 <a name="contact"></a>
 
 ## 💬 Contact me 💬
 
-My name is Felipe Scherer and you can find me at:
-
-<div align="center">
-
-[![Youtube][youtube-shield]][youtube-url]
-[![Linkedin][linkedin-shield]][linkedin-url]
-[![Github][github-shield]][github-url]
-
-</div>
+My name is Felipe Scherer. You can find my socials at [my Github profile](https://github.com/fescherer) 😸
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,7 +205,7 @@ My name is Felipe Scherer and you can find me at:
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/ofelipescherer">
+      <a href="https://github.com/fescherer">
         <img src="https://avatars.githubusercontent.com/u/62115215" width="100px;" alt="Felipe Scherer Picture"/><br>
         <sub>
           <b>Felipe Scherer</b>
@@ -208,22 +219,22 @@ My name is Felipe Scherer and you can find me at:
 
 <!-- Badges and Badges Link -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/ofelipescherer/rpg-whitn.svg?style=for-the-badge
-[contributors-url]: https://github.com/ofelipescherer/rpg-whitn/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ofelipescherer/rpg-whitn.svg?style=for-the-badge
-[forks-url]: https://github.com/ofelipescherer/rpg-whitn/network/members
-[stars-shield]: https://img.shields.io/github/stars/ofelipescherer/rpg-whitn.svg?style=for-the-badge
-[stars-url]: https://github.com/ofelipescherer/rpg-whitn/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ofelipescherer/rpg-whitn.svg?style=for-the-badge
-[issues-url]: https://github.com/ofelipescherer/rpg-whitn/issues
-[license-shield]: https://img.shields.io/github/license/ofelipescherer/rpg-whitn.svg?style=for-the-badge
-[license-url]: https://github.com/ofelipescherer/rpg-whitn/blob/master/LICENSE.md
+[contributors-shield]: https://img.shields.io/github/contributors/fescherer/rpg-whitn.svg?style=for-the-badge
+[contributors-url]: https://github.com/fescherer/rpg-whitn/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/fescherer/rpg-whitn.svg?style=for-the-badge
+[forks-url]: https://github.com/fescherer/rpg-whitn/network/members
+[stars-shield]: https://img.shields.io/github/stars/fescherer/rpg-whitn.svg?style=for-the-badge
+[stars-url]: https://github.com/fescherer/rpg-whitn/stargazers
+[issues-shield]: https://img.shields.io/github/issues/fescherer/rpg-whitn.svg?style=for-the-badge
+[issues-url]: https://github.com/fescherer/rpg-whitn/issues
+[license-shield]: https://img.shields.io/github/license/fescherer/rpg-whitn.svg?style=for-the-badge
+[license-url]: https://github.com/fescherer/rpg-whitn/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0E76A8
-[linkedin-url]: https://www.linkedin.com/in/ofelipescherer
+[linkedin-url]: https://www.linkedin.com/in/fescherer
 [youtube-shield]: https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white
 [youtube-url]: https://www.youtube.com/channel/UCySqmz_Rohnl53VLoNQsnKg
 [github-shield]: https://img.shields.io/badge/Github-000000?style=for-the-badge&logo=github&logoColor=white
-[github-url]: https://github.com/ofelipescherer
+[github-url]: https://github.com/fescherer
 [angular]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
 [angular-url]: https://angular.io
 [angular-material]: https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white
@@ -237,6 +248,6 @@ My name is Felipe Scherer and you can find me at:
 [styled components]: https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white
 [styled-components-url]: https://styled-components.com
 [info-contribute-shield]: https://img.shields.io/badge/👋-How%20to%20contribute-blue.svg?style=for-the-badge
-[info-contribute-url]: https://github.com/ofelipescherer/utils/blob/main/CONTRIBUTING.md
+[info-contribute-url]: https://github.com/fescherer/utils/blob/main/CONTRIBUTING.md
 [info-issues-shield]: https://img.shields.io/badge/🐞-How%20to%20create%20an%20issue-blue.svg?style=for-the-badge
-[info-issues-url]: https://github.com/ofelipescherer/utils/blob/main/ISSUE.md
+[info-issues-url]: https://github.com/fescherer/utils/blob/main/ISSUE.md
