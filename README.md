@@ -56,7 +56,7 @@ A good part of WHITN is using a fallen angel as weapon, likes JOJO's Stands. The
 
 [RPG Rules](/rules/rules.pdf)
 
-[Deploy](./)
+[Deploy](https://fescherer.github.io/rpg-whitn)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
