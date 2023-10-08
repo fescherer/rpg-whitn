@@ -30,17 +30,11 @@ A RPG caracter sheet for my RPG WHITN
 •
 <a href="#usage">How to use</a>
 •
-<a href="#issue">Report Bug / Request Feature</a>
-•
-<a href="#contributing">Contributing</a>
-•
-<a href="#license">License</a>
+<a href="#info">Info</a>
 •
 <a href="#contact">Contact me</a>
 •
 <a href="#contributors">Contributors</a>
-•
-<a href="#special-thanks">Special Thanks</a>
 
 </p>
 </div>
@@ -49,7 +43,7 @@ A RPG caracter sheet for my RPG WHITN
 
 <a name="about"></a>
 
-## 💬 About 💬
+## 📕 About 📕
 
 This project is a character sheet for managing players of my RPG WHITN, so you will find all that is necessarly to manage a WHITN character.
 A good part of WHITN is using a fallen angel as weapon, likes JOJO's Stands. The Angels's pictures were taken from [Angelarium](https://www.angelarium.net)
@@ -70,8 +64,8 @@ A good part of WHITN is using a fallen angel as weapon, likes JOJO's Stands. The
 
 [![Angular][angular]][angular-url]
 [![Angular Material][angular-material]][angular-material-url]
-[![HTML 5][html 5]][html-url]
-[![CSS 3][css 3]][css-url]
+[![HTML 5][html-5]][html-url]
+[![CSS 3][css-3]][css-url]
 [![Typescript][typescript]][typescript-url]
 
 </div>
@@ -90,28 +84,26 @@ To get this project up and running locally on your pc, follow the steps:
 
 - npm
   ```sh
-  npm install npm@latest -g
+   npm install npm@latest -g
   ```
 
 ### Installation
 
 1. Clone the repo
-   ```sh
+  ```sh
    git clone https://github.com/fescherer/rpg-whitn.git
-   ```
-
+  ```
 2. Install NPM packages
-   ```sh
+  ```sh
    npm install
-   ```
-
+  ```
 3. This project uses Firebase as database, so I cannot pass my firebase credentials. If you want to run locally you need to provide your own credentials. For this:
 
-    3.1. Create a google account;
+  3.1. Create a google account;
 
-    3.2. Login at [firebase site](https://firebase.google.com);
+  3.2. Login at [firebase site](https://firebase.google.com);
 
-    3.3. Create a project and get your SDK credentials;
+  3.3. Create a project and get your SDK credentials;
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -152,40 +144,25 @@ To get this project up and running locally on your pc, follow the steps:
 
 ![Angels's area Widget 5](https://user-images.githubusercontent.com/62115215/235560883-f29c0bed-72a1-4544-acaf-86a5ba4c6e94.png)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- **********************🐲Report Bug / Request Feature🐲********************** -->
-<a name="issue"></a>
+<!-- **********************🐲Info🐲********************** -->
 
-## 🐞 Report Bug / Request Feature 🐞
+<a name="info"></a>
 
-If you found a bug or want to request a feature, you can open an [issue](https://github.com/fescherer/utils/blob/main/ISSUE.md)
+## 🌎 Info 🌎
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Don't forget to leave a star if you like the project ✨
 
+<div align="center">
 
-<!-- **********************🐲Be part of this project🐲********************** -->
-<a name="contributing"></a>
+[![MIT License][license-shield]][license-url]
+[![How to contribute][info-contribute-shield]][info-contribute-url]
+[![Create an issue][info-issues-shield]][info-issues-url]
 
-## 👋 Be part of this project 👋
-
-Contributions are extremely welcome. You can see how to make one by following the file [Contributing](https://github.com/fescherer/utils/blob/main/CONTRIBUTING.md)
-
-And don't forget to leave a star on the project if you liked it 🤩
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- **********************🐲License🐲********************** -->
-<a name="license"></a>
-
-## ⚖️ License ⚖️
-
-Distributed under the MIT License. See [License](LICENSE) for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- **********************🐲Contact Me🐲********************** -->
 <a name="contact"></a>
@@ -206,7 +183,7 @@ My name is Felipe Scherer. You can find my socials at [my Github profile](https:
   <tr>
     <td align="center">
       <a href="https://github.com/fescherer">
-        <img src="https://avatars.githubusercontent.com/u/62115215" width="100px;" alt="Felipe Scherer Picture"/><br>
+        <img src="https://github.com/fescherer.png" width="100px;" alt="Felipe Scherer Picture"/><br>
         <sub>
           <b>Felipe Scherer</b>
         </sub>
@@ -218,7 +195,6 @@ My name is Felipe Scherer. You can find my socials at [my Github profile](https:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Badges and Badges Link -->
-
 [contributors-shield]: https://img.shields.io/github/contributors/fescherer/rpg-whitn.svg?style=for-the-badge
 [contributors-url]: https://github.com/fescherer/rpg-whitn/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/fescherer/rpg-whitn.svg?style=for-the-badge
@@ -227,27 +203,22 @@ My name is Felipe Scherer. You can find my socials at [my Github profile](https:
 [stars-url]: https://github.com/fescherer/rpg-whitn/stargazers
 [issues-shield]: https://img.shields.io/github/issues/fescherer/rpg-whitn.svg?style=for-the-badge
 [issues-url]: https://github.com/fescherer/rpg-whitn/issues
+
 [license-shield]: https://img.shields.io/github/license/fescherer/rpg-whitn.svg?style=for-the-badge
 [license-url]: https://github.com/fescherer/rpg-whitn/blob/master/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0E76A8
-[linkedin-url]: https://www.linkedin.com/in/fescherer
-[youtube-shield]: https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white
-[youtube-url]: https://www.youtube.com/channel/UCySqmz_Rohnl53VLoNQsnKg
-[github-shield]: https://img.shields.io/badge/Github-000000?style=for-the-badge&logo=github&logoColor=white
-[github-url]: https://github.com/fescherer
-[angular]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[angular-url]: https://angular.io
-[angular-material]: https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white
-[angular-material-url]: https://material.angular.io
-[html 5]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-[html-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
-[css 3]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
-[css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
-[typescript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
-[typescript-url]: https://www.typescriptlang.org
-[styled components]: https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white
-[styled-components-url]: https://styled-components.com
 [info-contribute-shield]: https://img.shields.io/badge/👋-How%20to%20contribute-blue.svg?style=for-the-badge
 [info-contribute-url]: https://github.com/fescherer/utils/blob/main/CONTRIBUTING.md
 [info-issues-shield]: https://img.shields.io/badge/🐞-How%20to%20create%20an%20issue-blue.svg?style=for-the-badge
 [info-issues-url]: https://github.com/fescherer/utils/blob/main/ISSUE.md
+
+<!-- https://github.com/Ileriayo/markdown-badges -->
+[html-5]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[html-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[css-3]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[typescript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[typescript-url]: https://www.typescriptlang.org
+[angular]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[angular-url]: https://angular.io
+[angular-material]: https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white
+[angular-material-url]: https://material.angular.io
